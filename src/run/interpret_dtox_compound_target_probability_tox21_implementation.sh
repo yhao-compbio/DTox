@@ -1,0 +1,3 @@
+./src/run/interpret_dtox_compound_target_probability_tox21_implementation1.sh &
+./src/run/interpret_dtox_compound_target_probability_tox21_implementation2.sh &
+./src/run/interpret_dtox_compound_target_probability_tox21_implementation3.sh &
