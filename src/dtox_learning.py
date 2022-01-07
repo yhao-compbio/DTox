@@ -165,7 +165,7 @@ def evaluate_dtox_model(dtox_model, dtox_loss_function, dtox_eval_data, dtox_dev
 		# dtox_device: device to train DTox model on, 'cpu' or 'cuda' 
 
 	## 1. Implement DTox model on validation data to generate predicted output
-	# set model to evaluation model
+	# set model to evaluation mode
 	dtox_model.eval()
 	# implement DTox model to validation data, perform forward propogation to compute root and auxiliary output 
 	eval_feature, eval_label = dtox_eval_data.features.to(dtox_device), dtox_eval_data.labels.to(dtox_device)
