@@ -14,7 +14,7 @@ from sklearn.metrics import balanced_accuracy_score
 from sklearn.metrics import f1_score
 
 
-## This function computes confidence interval width of metric by bootstrapping.
+## This function computes confidence interval width of metric by bootstrapping
 def compute_metric_ci_by_bootsrap(metric_function, label_vec, pred_vec, confidence_interval = 0.95, bootstrap_times = 1000):
 	## 0. Input arguments: 
 		# metric_function: scikit-learn metric function to evalute classification model

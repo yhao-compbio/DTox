@@ -123,23 +123,23 @@ def train_dtox_model(dtox_root_file, dtox_relation_file, dtox_node_size_file, dt
 	return dtox_hierarchy_stat, model, loss_function, train_summary
 
 
-## This function computes confidence interval of metric by bootstrapping
+## This function computes confidence interval width of metric by bootstrapping
 def compute_metric_ci_by_bootsrap(metric_function, label_vec, pred_vec, confidence_interval = 0.95, bootstrap_times = 1000):
 	## 0. Input arguments: 
-		# metric_function:
-		# label_vec: input true label array
-		# pred_vec: input prediction probability array
-		# confidence_interval: confidence interval to be computed (number between 0 and 1)
+		# metric_function: scikit-learn metric function to evalute classification model
+		# label_vec: list/array that conatins true sample labels 
+		# pred_vec: list/array that conatins positive label predicted probability of samples 
+		# confidence_interval: confidence interval ratio to be computed (number between 0 and 1)
 		# bootstrap_times: repeated sampling times for bootstrap
 
 	## 1. Compute confidence interval of mean by bootstrapping
 	vec_len = len(pred_vec)
 	id_vec = np.arange(0, vec_len)
-	# Repeat boostrap process
+	# repeat boostrap process
 	sample_metrics = []
 	np.random.seed(0)
 	for sample in range(0, bootstrap_times):
-		# Sampling with replacement from the input array
+		# sampling with replacement from the input array
 		sample_ids = np.random.choice(id_vec, size = vec_len, replace = True)
 		sample_ids = np.unique(sample_ids)
 		# compute sample metric
@@ -150,6 +150,7 @@ def compute_metric_ci_by_bootsrap(metric_function, label_vec, pred_vec, confiden
 	# obtain upper and lower index of confidence interval 
 	lower_id = int((0.5 - confidence_interval/2) * bootstrap_times) - 1
 	upper_id = int((0.5 + confidence_interval/2) * bootstrap_times) - 1
+	# compute width of confidence interval
 	ci = (sample_metrics[upper_id] - sample_metrics[lower_id])/2
 	
 	return ci
@@ -164,7 +165,7 @@ def evaluate_dtox_model(dtox_model, dtox_loss_function, dtox_eval_data, dtox_dev
 		# dtox_device: device to train DTox model on, 'cpu' or 'cuda' 
 
 	## 1. Implement DTox model on validation data to generate predicted output
-	# set model to evaluation mode
+	# set model to evaluation model
 	dtox_model.eval()
 	# implement DTox model to validation data, perform forward propogation to compute root and auxiliary output 
 	eval_feature, eval_label = dtox_eval_data.features.to(dtox_device), dtox_eval_data.labels.to(dtox_device)
