@@ -52,7 +52,7 @@ def train_dtox_model(dtox_root_file, dtox_relation_file, dtox_node_size_file, dt
 	stop_function = early_stop.stop(patience = dtox_patience, model_name = dtox_model_name)
 	
 	## 2. Train DTox model 
-	# Perform training by epoch until early stopping criterion is reached  
+	# perform training by epoch until early stopping criterion is reached  
 	epoch = 0
 	train_total_loss = []
 	train_root_loss = []
@@ -115,8 +115,7 @@ def train_dtox_model(dtox_root_file, dtox_relation_file, dtox_node_size_file, dt
 		# stop training if the maximum epoch is reached  	
 		if epoch == dtox_max_epoch:
 			break
-	
-	## 3. Store training and testing loss of every epoch in data frame form  
+	# store training and testing loss of every epoch in data frame form  	
 	train_epoch = np.arange(1, epoch+1)
 	train_summary = pd.DataFrame({'epoch': train_epoch, 'training_total_loss': train_total_loss, 'training_root_loss': train_root_loss, 'training_auxiliary_loss': train_auxi_loss, 'testing_total_loss': test_total_loss, 'testing_root_loss': test_root_loss, 'testing_auxiliary_loss': test_auxi_loss})
 
@@ -203,7 +202,7 @@ def evaluate_dtox_model(dtox_model, dtox_loss_function, dtox_eval_data, dtox_dev
 	return metric_dict
 
 
-## This function generates output list of DTox model performance 
+## This function generates content for output DTox performance file   
 def generate_dtox_performance_file(dtox_train_data, dtox_train_perf, dtox_valid_data, dtox_valid_perf, dtox_hierarchy_stat, round_digit = 5):
 	## 0. Input arguments 
 		# dtox_train_data: formatted training data (see 'dtox_data')
@@ -231,7 +230,7 @@ def generate_dtox_performance_file(dtox_train_data, dtox_train_perf, dtox_valid_
 		v = round(v, round_digit)
 		valid_perf_str.append(k + ':' + str(v)) 
 		 
-	## 3. Generate performance file  
+	## 3. Generate list of strings that describe model performance info  
 	dtox_perf_stat = dtox_hierarchy_stat.copy()
 	dtox_perf_stat.append('Number of training instances: ' + str(N_train))
 	dtox_perf_stat.append('Training performance: ' + ','.join(train_perf_str))

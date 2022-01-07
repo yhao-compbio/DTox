@@ -139,7 +139,7 @@ def convert_dict_to_string(query_dict, round_digit = 5):
 	return output_str
 
 
-## This function generates content for output performance file   
+## This function generates content for output simple learning performance file   
 def generate_simple_performance_file(N_train_instances, N_test_instances, hp_settings, train_metrics, test_metrics):
 	## 0. Input arguments 
 		# N_train_instanceis: number of samples in training dataset  
@@ -151,10 +151,10 @@ def generate_simple_performance_file(N_train_instances, N_test_instances, hp_set
 	## 1. Convert performance metric dictionaries to strings  
 	# convert training metric dictionary keys and values to string 
 	train_metric_str = convert_dict_to_string(train_metrics)
-	# convery validation metric dictionary keys and values to string 
+	# convert validation metric dictionary keys and values to string 
 	test_metric_str = convert_dict_to_string(test_metrics)		
 	
-	## 2. Generate list of strings that describes model performance info
+	## 2. Generate list of strings that describe model performance info
 	perf_list = []	
 	perf_list.append('Number of training instances: ' + str(N_train_instances))
 	perf_list.append('Number of testing instances: ' + str(N_test_instances))
