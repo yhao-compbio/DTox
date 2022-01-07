@@ -16,6 +16,11 @@
     + [`dtox_lrp.py`](dtox_lrp.py) contains functions used for implementing LRP to evaluate relevance of DTox paths.
     + [`run/run_interpret_dtox.R`](run/run_interpret_dtox.R) generates shell scripts that runs DTox interpretation procedure on optimal models trained for Tox21 datasets.
 
++ Simple machine learning model
+  + [`simple/simple.py`](simple/simple.py) develops and evaluates simple machine learning model (random forest or gradient boosting).
+    + [`simple/simple_learning.py`](simple/simple_learning.py) contains functions for building, evaluating, and implementing simple machine learning models.
+    + [`run/run_simple.R`](run/run_simple.R) generates shell scripts that run simple machine learning models on Tox21 datasets under different hyperparameter settings.
+
 ## Executable shell scripts
 
 + DTox model implementation 
@@ -25,3 +30,6 @@
 
 + DTox model interpretation 
   + [`run/interpret_dtox_compound_target_probability_tox21_implementation.sh`](run/interpret_dtox_compound_target_probability_tox21_implementation.sh) implements [`interpret_dtox.py`](`interpret_dtox.py`) on optimal models trained for compound target binding-Tox21 assay outcome datasets.
+
++ Simple learning implementation
+  + [`run/run_simple_compound_target_tox21.sh`](run/run_simple_compound_target_tox21.sh) runs [`run/run_simple.R`](run/run_simple.R) to generate [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) and [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh). [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) implements [`simple/simple.py`](simple/simple.py) to build random forest models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh) implements [`simple/simple.py`](simple/simple.py) to build gradient boosting models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. 
