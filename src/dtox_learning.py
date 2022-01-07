@@ -156,7 +156,7 @@ def compute_metric_ci_by_bootsrap(metric_function, label_vec, pred_vec, confiden
 	return ci
 
 
-## This function evaluates the performance of DTox model using input validation data  
+## This function evaluates the performance of trained DTox model on input validation data  
 def evaluate_dtox_model(dtox_model, dtox_loss_function, dtox_eval_data, dtox_device = 'cpu'): 
 	## 0. Input arguments
 		# dtox_model: trained DTox model
@@ -164,10 +164,10 @@ def evaluate_dtox_model(dtox_model, dtox_loss_function, dtox_eval_data, dtox_dev
 		# dtox_eval_data: formatted validation data (see 'dtox_data')
 		# dtox_device: device to train DTox model on, 'cpu' or 'cuda' 
 
-	## 1. Implement DTox model on validation data to generate predicted output
+	## 1. Implement trained DTox model on validation data to generate predicted output
 	# set model to evaluation mode
 	dtox_model.eval()
-	# implement DTox model to validation data, perform forward propogation to compute root and auxiliary output 
+	# implement trained DTox model to validation data, perform forward propogation to compute root and auxiliary output 
 	eval_feature, eval_label = dtox_eval_data.features.to(dtox_device), dtox_eval_data.labels.to(dtox_device)
 	eval_y_pred, eval_auxi_pred = dtox_model(eval_feature)
 	# convert predicted probability and label of validation data to numpy array (for computing metrics)
