@@ -21,6 +21,11 @@
     + [`simple/simple_learning.py`](simple/simple_learning.py) contains functions for building, evaluating, and implementing simple machine learning models.
     + [`run/run_simple.R`](run/run_simple.R) generates shell scripts that run simple machine learning models on Tox21 datasets under different hyperparameter settings.
 
++ Multi-layer perceptron neural network model
+  + [`mlp/mlp.py`](mlp/mlp.py) develops and evaluates a fully connected Multi-Layer Perceptron (MLP) neural network model, otherwise with the same number of hidden layer/neuron as the matched DTox model. 
+    + [`mlp/mlp_learning.py`](mlp/mlp_learning.py) contains functions used in the Multi-Layer Perceptron (MLP) neural network model.
+    + [`run/run_mlp.R`](run/run_mlp.R) generates shell scripts that run fully connected MLP neural network models on Tox21 datasets, which are built with the same number of hidden layer/neuron as matched DTox models.
+
 ## Executable shell scripts
 
 + DTox model implementation 
@@ -32,4 +37,8 @@
   + [`run/interpret_dtox_compound_target_probability_tox21_implementation.sh`](run/interpret_dtox_compound_target_probability_tox21_implementation.sh) implements [`interpret_dtox.py`](`interpret_dtox.py`) on optimal models trained for compound target binding-Tox21 assay outcome datasets.
 
 + Simple learning implementation
-  + [`run/run_simple_compound_target_tox21.sh`](run/run_simple_compound_target_tox21.sh) runs [`run/run_simple.R`](run/run_simple.R) to generate [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) and [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh). [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) implements [`simple/simple.py`](simple/simple.py) to build random forest models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh) implements [`simple/simple.py`](simple/simple.py) to build gradient boosting models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. 
+  + [`run/run_simple_compound_target_tox21.sh`](run/run_simple_compound_target_tox21.sh) runs [`run/run_simple.R`](run/run_simple.R) to generate [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) and [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh). [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) implements [`simple/simple.py`](simple/simple.py) to build random forest models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh) implements [`simple/simple.py`](simple/simple.py) to build gradient boosting models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings.
+
++ Multi-layer perceptron neural network implementation 
+  + [`run/run_mlp.sh`](run/run_mlp.sh) runs [`run/run_mlp.R`](run/run_mlp.R) to generate [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh). [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh) implements [`mlp/mlp.py`](mlp/mlp.py) on compound target binding-Tox21 assay outcome datasets. 
+
