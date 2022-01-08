@@ -14,7 +14,7 @@ import simple_learning
 ## Main function 
 def main(argv):
 	## 0. Input arguments 
-		# argv 1: input file that contains combined training data 
+		# argv 1: input file that contains training data 
 		# argv 2: input file that contains validation data 
 		# argv 3: name of column that contains label/response data 
 		# argv 4: name of output file  
@@ -31,7 +31,7 @@ def main(argv):
 	test_X_data, test_y_data = test_data_df.drop(outcome_col, axis = 1).values, test_data_df[outcome_col].values
 	
 	## 2. Develop and evaluate simple machine learning model 
-	# learn classification model from training data, then evaluate the learned model on validation data 
+	# learn classification model from training data, then evaluate the learned model on training as well as validation data 
 	simple_learner, hyper_str, train_perf, test_perf = simple_learning.build_simple_classifier(train_X_data, test_X_data, train_y_data, test_y_data, argv[5], argv[6])
 	# generate content for output performance file 
 	output_perf_list = simple_learning.generate_simple_performance_file(train_X_data.shape[0], test_X_data.shape[0], argv[6], train_perf, test_perf)
