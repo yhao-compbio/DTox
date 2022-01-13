@@ -26,6 +26,17 @@
     + [`mlp/mlp_learning.py`](mlp/mlp_learning.py) contains functions used in the Multi-Layer Perceptron (MLP) neural network model.
     + [`run/run_mlp.R`](run/run_mlp.R) generates shell scripts that run fully connected MLP neural network models on Tox21 datasets, which are built with the same number of hidden layer/neuron as matched DTox models.
 
++ Model performance analysis, comparison, and visualization 
+  + [`analysis_dtox/collect_model_results.R`](analysis_dtox/collect_model_results.R) collects machine learning model basic info and performance metrics from performance files.
+  + [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) identifies optimal hyperparameter setting of machine learning method implementation, then compares and visualizes model performance across different method implementations.
+    + [`analysis_dtox/dtox_analysis.py`](analysis_dtox/dtox_analysis.py) contains functions used in DTox model result anaysis.
+    + [`analysis_dtox/dtox_plot.py`](analysis_dtox/dtox_plot.py) contains functions for visualizing DTox model results.
+  + [`analysis_dtox/compare_dtox_hyperparameter.R`](analysis_dtox/compare_dtox_hyperparameter.R) normalizes DTox model performance across a query hyperparameter for comparison.
+  + [`analysis_dtox/visualize_hyperparameter_comparison.py`](analysis_dtox/visualize_hyperparameter_comparison.py) uses heatmap and upsetplot to visualize normalized model performance of Tox21 datasets across root pathway settings.
+  + [`analysis_dtox/compute_dtox_connections.R`](analysis_dtox/compute_dtox_connections.R) computes total number of parameters in DTox and matched fully connected multi-layer perceptron (MLP) models.
+  + [`analysis_dtox/visualize_parameter_comparison.py`](analysis_dtox/visualize_parameter_comparison.py) uses barplot to visualize comparison of DTox and MLP model statistics across Tox21 datasets.
+  + [`analysis_dtox/visualize_training_loss.py`](analysis_dtox/visualize_training_loss.py) uses line charts to visualize evolution of training/testing loss over epoches during DTox learning process.
+
 ## Executable shell scripts
 
 + DTox model implementation 
@@ -42,3 +53,13 @@
 + Multi-layer perceptron neural network implementation 
   + [`run/run_mlp.sh`](run/run_mlp.sh) runs [`run/run_mlp.R`](run/run_mlp.R) to generate [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh). [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh) implements [`mlp/mlp.py`](mlp/mlp.py) on compound target binding-Tox21 assay outcome datasets. 
 
++ Model performance analysis, comparison, and visualization
+  + Result collection 
+    + [`run/collect_model_results_compound_target_tox21_implementation.sh`](run/collect_model_results_compound_target_tox21_implementation.sh) implements [`analysis_dtox/collect_model_results.R`](analysis_dtox/collect_model_results.R) to collect results of DTox models built upon compound target binding-Tox21 assay outcome datasets under sorted Reactome pathway hierarchy. 
+    + [`run/collect_model_results_compound_target_tox21_shuffle.sh`](run/collect_model_results_compound_target_tox21_shuffle.sh) implements [`analysis_dtox/collect_model_results.R`](analysis_dtox/collect_model_results.R) to collect results of DTox models built upon compound target binding-Tox21 assay outcome datasets under shuffled Reactome pathway hierarchy.
+    + [`run/collect_model_results_compound_target_tox21_simple.sh`](run/collect_model_results_compound_target_tox21_simple.sh) implements [`analysis_dtox/collect_model_results.R`](analysis_dtox/collect_model_results.R) to collect results of simple machine learning models built upon compound target binding-Tox21 assay outcome datasets under different hyperparameter settings.
+    + [`run/collect_model_results_compound_target_tox21_mlp.sh`](run/collect_model_results_compound_target_tox21_mlp.sh) implements [`analysis_dtox/collect_model_results.R`](analysis_dtox/collect_model_results.R) to collect results of MLP modles built upon compound target binding-Tox21 assay outcome datasets.
+  + Result analysis 
+    + [`run/analyze_dtox_results_compound_target_tox21_simple.sh`](run/analyze_dtox_results_compound_target_tox21_simple.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of simple machine learning model implementation on compound target binding-Tox21 assay outcome datasets. 
+    + [`run/analyze_dtox_results_compound_target_tox21_dtox.sh`](run/analyze_dtox_results_compound_target_tox21_dtox.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of DTox model implementation on compound target binding-Tox21 assay outcome datasets under sorted Reactome pathway hierarchy, then compare and visualize model performance across different method implementations.
+     

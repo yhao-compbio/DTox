@@ -1,0 +1,2 @@
+module add R
+Rscript	src/analysis_dtox/collect_model_results.R	data/compound_target_probability_tox21_shuffle/shuffle/	10	13	24	dtox	data/compound_target_probability_tox21_shuffle/compound_target_probability_tox21_shuffle
