@@ -3,9 +3,9 @@
 ## Implementing DTox visible neural network model on compound target binding-Tox21 assay outcome datasets 
 
 + First, hyperparameter tuning of DTox model was performed to find the optimal setting for each of the 15 Tox21 datasets. DTox model has three hyperparameters (listed below). Altogether, 90 hyperparameter combinations were implemented on each dataset. Model performance was measured using binary cross-entropy (BCE) loss, area under ROC curve (AUROC), balanced accuracy, and F1 score. Details about model statistics and performance can be found [here](compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_performance_summary.tsv). The three hyperparameters are:   
-  + minimal size of pathways included in DTox model (values for implementation: 5, 20)
-  + root pathway combinations (values for implementation: 'gene expression', 'immune system', 'metabolism', 'signal transduction' and all possible combinations of the four pathways, 15 in total)
-  + coefficient for auxiliary loss in loss function (values for implementation: 0.1, 0.5, 1)
+  + minimal size of pathways included in DTox model ('ps', values for implementation: 5, 20)
+  + root pathway combinations ('rt', values for implementation: 'gene expression', 'immune system', 'metabolism', 'signal transduction' and all possible combinations of the four pathways, 15 in total)
+  + coefficient for auxiliary loss in loss function ('al', values for implementation: 0.1, 0.5, 1)
 
 + Next, training BCE loss was employed to identify the optimal hyperparameter setting for each dataset (see [optimal model statistics](compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_optimal_model_parameter_summary.tsv) and [optimal model performance](compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_optimal_performance_summary_by_training_root_loss.tsv)). Model performance was also [normalized](compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_rt_training_root_loss_normalized_comparison_by_dataset.tsv) to enable comparison of root pathway settings across Tox21 datasets.
 
