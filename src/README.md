@@ -37,6 +37,10 @@
   + [`analysis_dtox/visualize_parameter_comparison.py`](analysis_dtox/visualize_parameter_comparison.py) uses barplot to visualize comparison of DTox and MLP model statistics across Tox21 datasets.
   + [`analysis_dtox/visualize_training_loss.py`](analysis_dtox/visualize_training_loss.py) uses line charts to visualize evolution of training/testing loss over epoches during DTox learning process.
 
++ Model interpretation analysis and comparison
+  + [`analysis_interpret/compute_hyperparameter_similarity.R`](analysis_interpret/compute_hyperparameter_similarity.R) compares the significant DTox paths detected under different hyperparameter settings of layer-wise relevance propagation rule on Tox21 datasets, and compute Jaccary Index to measure the similarity among distinct hyperparameter settings.
+  + [`analysis_interpret/visualize_hyperparameter_similarity.py`](analysis_interpret/visualize_hyperparameter_similarity.py) uses heatmap to visualize the similarity of significant DTox paths under different hyperparameter settings of layer-wise relevance propagation rule on Tox21 datasets.
+
 ## Executable shell scripts
 
 + DTox model implementation 
@@ -62,4 +66,3 @@
   + Result analysis 
     + [`run/analyze_dtox_results_compound_target_tox21_simple.sh`](run/analyze_dtox_results_compound_target_tox21_simple.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of simple machine learning model implementation on compound target binding-Tox21 assay outcome datasets. 
     + [`run/analyze_dtox_results_compound_target_tox21_dtox.sh`](run/analyze_dtox_results_compound_target_tox21_dtox.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of DTox model implementation on compound target binding-Tox21 assay outcome datasets under sorted Reactome pathway hierarchy, then compare and visualize model performance across different method implementations.
-     
