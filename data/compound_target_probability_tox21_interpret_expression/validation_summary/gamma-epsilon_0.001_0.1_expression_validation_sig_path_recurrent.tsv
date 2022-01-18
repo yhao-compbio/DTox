@@ -1,0 +1,71 @@
+assay	recurrent_path	n_compounds	compound_name
+tox21-rt-viability-hepg2-p1	Immune System;Cytokine Signaling in Immune system;Signaling by Interleukins;Interleukin-4 and Interleukin-13 signaling	3	chloroxine;niclosamide;aprepitant
+tox21-rt-viability-hepg2-p1	Immune System;Innate Immune System;Neutrophil degranulation	2	domperidone;nimodipine
+tox21-aromatase-p1	Immune System;Cytokine Signaling in Immune system;Signaling by Interleukins;Interleukin-4 and Interleukin-13 signaling	17	benzocaine;lacidipine;exemestane;triamcinolone;leflunomide;epitiostanol;raloxifene;sofalcone;tazarotene;fenobam;nitazoxanide;miconazole;niclosamide;forskolin;acitretin;tioconazole;pd-0325901
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;Regulation of TP53 Activity;Regulation of TP53 Activity through Phosphorylation	17	pirarubicin;clofarabine;bisacodyl;bortezomib;niclosamide;simvastatin;cycloheximide;everolimus;methylprednisolone;fulvestrant;raloxifene;lacidipine;triciribine;tamoxifen citrate;ribavirin;forskolin;atorvastatin
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Transcription of Cell Cycle Genes;TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest	15	clofarabine;bortezomib;nateglinide;simvastatin;fulvestrant;niclosamide;lacidipine;triciribine;tamoxifen citrate;ribavirin;raloxifene;riluzole;atorvastatin;everolimus;curcumin
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Transcription of Cell Cycle Genes;TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest	13	clofarabine;simvastatin;everolimus;fulvestrant;tamoxifen citrate;bortezomib;niclosamide;raloxifene;lacidipine;triciribine;ribavirin;nitazoxanide;riluzole
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;Regulation of TP53 Activity;Regulation of TP53 Expression and Degradation;Regulation of TP53 Degradation	11	bortezomib;simvastatin;cycloheximide;clofarabine;niclosamide;raloxifene;triciribine;tamoxifen citrate;lacidipine;atorvastatin;everolimus
+tox21-aromatase-p1	Immune System;Innate Immune System;Neutrophil degranulation	10	benfotiamine;halcinonide;amineptine;miconazole;hydrocortisone;bifonazole;bortezomib;nitazoxanide;chlormadinone;lacidipine
+tox21-aromatase-p1	Immune System;Adaptive Immune System;MHC class II antigen presentation	7	alprazolam;clotrimazole;miconazole;sofalcone;triciribine;bifonazole;tamoxifen citrate
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by the AP-2 (TFAP2) family of transcription factors;TFAP2 (AP-2) family regulates transcription of cell cycle factors	7	pirarubicin;fulvestrant;niclosamide;triciribine;clofarabine;bisacodyl;nitazoxanide
+tox21-aromatase-p1	Immune System;Adaptive Immune System;TCR signaling;Downstream TCR signaling	5	budesonide;miconazole;epitiostanol;erlotinib;griseofulvin
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Transcription of DNA Repair Genes	5	fulvestrant;triciribine;digoxin;forskolin;lacidipine
+tox21-aromatase-p1	Immune System;Adaptive Immune System;TCR signaling;Generation of second messenger molecules	4	alprazolam;halcinonide;epitiostanol;exemestane
+tox21-aromatase-p1	Immune System;Adaptive Immune System;TCR signaling;Phosphorylation of CD3 and TCR zeta chains	3	alprazolam;miconazole;exemestane
+tox21-aromatase-p1	Immune System;Adaptive Immune System;Costimulation by the CD28 family;PD-1 signaling	3	alprazolam;miconazole;exemestane
+tox21-aromatase-p1	Immune System;Adaptive Immune System;Class I MHC mediated antigen processing & presentation;Antigen processing-Cross presentation;ER-Phagosome pathway	3	erlotinib;bifonazole;griseofulvin
+tox21-aromatase-p1	Immune System;Innate Immune System;DAP12 interactions;DAP12 signaling	3	climbazole;griseofulvin;sofalcone
+tox21-aromatase-p1	Immune System;Innate Immune System;Fc epsilon receptor (FCERI) signaling;FCERI mediated MAPK activation	3	amineptine;climbazole;nateglinide
+tox21-aromatase-p1	Immune System;Innate Immune System;Fc epsilon receptor (FCERI) signaling;FCERI mediated NF-kB activation	3	febuxostat;tamibarotene;griseofulvin
+tox21-aromatase-p1	Gene expression (Transcription);Epigenetic regulation of gene expression;Positive epigenetic regulation of rRNA expression;ERCC6 (CSB) and EHMT2 (G9a) positively regulate rRNA expression	3	digoxin;clofarabine;simvastatin
+tox21-aromatase-p1	Immune System;Cytokine Signaling in Immune system;Signaling by Interleukins;Interleukin-17 signaling;MAP kinase activation;MAPK targets/ Nuclear events mediated by MAP kinases;Activation of the AP-1 family of transcription factors	2	exemestane;lovastatin
+tox21-aromatase-p1	Immune System;Cytokine Signaling in Immune system;Signaling by Interleukins;Interleukin-10 signaling	2	leflunomide;epitiostanol
+tox21-aromatase-p1	Immune System;Cytokine Signaling in Immune system;Interferon Signaling;Antiviral mechanism by IFN-stimulated genes;ISG15 antiviral mechanism	2	4-hydroxyandrostenedione;miconazole
+tox21-aromatase-p1	Immune System;Adaptive Immune System;TCR signaling;Translocation of ZAP-70 to Immunological synapse	2	miconazole;exemestane
+tox21-aromatase-p1	Immune System;Adaptive Immune System;Costimulation by the CD28 family;CD28 co-stimulation;CD28 dependent PI3K/Akt signaling	2	epitiostanol;exemestane
+tox21-aromatase-p1	Immune System;Innate Immune System;Nucleotide-binding domain, leucine rich repeat containing receptor (NLR) signaling pathways;NOD1/2 Signaling Pathway	2	kavain;griseofulvin
+tox21-aromatase-p1	Immune System;Innate Immune System;Toll-like Receptor Cascades;Trafficking and processing of endosomal TLR	2	febuxostat;halcinonide
+tox21-aromatase-p1	Immune System;Innate Immune System;Fc epsilon receptor (FCERI) signaling;FCERI mediated Ca+2 mobilization	2	febuxostat;amineptine
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Notch-HLH transcription pathway	2	bisacodyl;forskolin
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by RUNX3;RUNX3 regulates NOTCH signaling	2	fulvestrant;bisacodyl
+tox21-aromatase-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by RUNX3;RUNX3 Regulates Immune Response and Cell Migration	2	fulvestrant;sofalcone
+tox21-pxr-p1	Immune System;Innate Immune System;Neutrophil degranulation	8	medrysone;fenofibrate;nimodipine;phenylbutazone;dexamethasone;itraconazole;exemestane;bexarotene
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;Regulation of TP53 Activity;Regulation of TP53 Activity through Phosphorylation	5	clofarabine;irinotecan;5-fluorouracil;fenretinide;itraconazole
+tox21-pxr-p1	Metabolism;Metabolism of lipids;Regulation of lipid metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha);PPARA activates gene expression	4	mk-2206;pazopanib;clofarabine;erlotinib
+tox21-pxr-p1	Gene expression (Transcription);Epigenetic regulation of gene expression;Negative epigenetic regulation of rRNA expression;NoRC negatively regulates rRNA expression	4	emetine;clofarabine;triciribine;irinotecan
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Transcription of Cell Cycle Genes;TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest	4	clofarabine;irinotecan;tamoxifen;pyrimethamine
+tox21-pxr-p1	Signal Transduction;Signaling by Rho GTPases;RHO GTPase Effectors;RHO GTPases Activate Formins	3	raclopride;tamoxifen;fenretinide
+tox21-pxr-p1	Signal Transduction;Signaling by Non-Receptor Tyrosine Kinases;Signaling by PTK6;PTK6 Regulates Cell Cycle	3	riluzole;raloxifene;quercetin
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Metabolic Genes	3	chloroxine;quercetin;5-fluorouracil
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;Regulation of TP53 Activity;Regulation of TP53 Expression and Degradation;Regulation of TP53 Degradation	3	tamoxifen citrate;tamoxifen;curcumin
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by TP53;TP53 Regulates Transcription of DNA Repair Genes	3	tamoxifen citrate;tamoxifen;irinotecan
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Nuclear Receptor transcription pathway	3	niclosamide;bexarotene;itraconazole
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by RUNX2;Regulation of RUNX2 expression and activity	3	niclosamide;roquinimex;itraconazole
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;RNA Pol II CTD phosphorylation and interaction with CE	3	tamoxifen citrate;tamoxifen;irinotecan
+tox21-pxr-p1	Metabolism;Metabolism of vitamins and cofactors;Metabolism of cofactors;Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation	2	pazopanib;kepone
+tox21-pxr-p1	Metabolism;Metabolism of carbohydrates;Glucose metabolism;Gluconeogenesis	2	triciribine;erlotinib
+tox21-pxr-p1	Signal Transduction;Signaling by GPCR;GPCR ligand binding;Class C/3 (Metabotropic glutamate/pheromone receptors)	2	vinpocetine;flunisolide
+tox21-pxr-p1	Signal Transduction;Signaling by Hedgehog;Hedgehog 'off' state;Degradation of GLI2 by the proteasome	2	erlotinib;pazopanib
+tox21-pxr-p1	Signal Transduction;Signaling by Hedgehog;Hedgehog 'off' state;GLI3 is processed to GLI3R by the proteasome	2	erlotinib;exemestane
+tox21-pxr-p1	Signal Transduction;Intracellular signaling by second messengers;PIP3 activates AKT signaling;Negative regulation of the PI3K/AKT network;PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling	2	benazepril;phenelzine
+tox21-pxr-p1	Signal Transduction;Signaling by Non-Receptor Tyrosine Kinases;Signaling by PTK6;ERBB2 Activates PTK6 Signaling	2	ibudilast;riluzole
+tox21-pxr-p1	Gene expression (Transcription);Epigenetic regulation of gene expression;Negative epigenetic regulation of rRNA expression;SIRT1 negatively regulates rRNA expression	2	emetine;irinotecan
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by RUNX3;Regulation of RUNX3 expression and activity	2	troglitazone;triciribine
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional regulation by RUNX1;RUNX1 regulates transcription of genes involved in differentiation of HSCs	2	budesonide;triciribine
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;Generic Transcription Pathway;Transcriptional Regulation by E2F6	2	irinotecan;fenretinide
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;RNA Polymerase II Pre-transcription Events	2	tamoxifen citrate;tamoxifen
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;RNA Polymerase II Transcription Pre-Initiation And Promoter Opening	2	tamoxifen citrate;tamoxifen
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;RNA Polymerase II Transcription Initiation And Promoter Clearance;RNA Polymerase II Promoter Escape	2	tamoxifen citrate;tamoxifen
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase II Transcription;RNA Polymerase II Transcription Initiation And Promoter Clearance;RNA Polymerase II Transcription Initiation	2	tamoxifen citrate;tamoxifen
+tox21-pxr-p1	Gene expression (Transcription);RNA Polymerase I Transcription;RNA Polymerase I Promoter Clearance;RNA Polymerase I Promoter Escape	2	emetine;irinotecan
+tox21-ahr-p1	Signal Transduction;MAPK family signaling cascades;MAPK6/MAPK4 signaling	2	pazopanib;nifedipine
+tox21-ahr-p1	Immune System;Innate Immune System;Neutrophil degranulation	2	menadione;alizarin
+tox21-mitotox-p1	Immune System;Cytokine Signaling in Immune system;Interferon Signaling;Antiviral mechanism by IFN-stimulated genes;ISG15 antiviral mechanism	4	mitotane;niclosamide;imatinib;spiperone
+tox21-mitotox-p1	Immune System;Adaptive Immune System;MHC class II antigen presentation	3	daunorubicin;bexarotene;fenretinide
+tox21-are-bla-p1	Metabolism;Metabolism of lipids;Regulation of lipid metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha);PPARA activates gene expression	4	clofarabine;exemestane;quercetin dihydrate;simvastatin
+tox21-are-bla-p1	Metabolism;Metabolism of lipids;Metabolism of steroids;Regulation of cholesterol biosynthesis by SREBP (SREBF);Activation of gene expression by SREBF (SREBP)	2	clofarabine;exemestane
+tox21-are-bla-p1	Immune System;Cytokine Signaling in Immune system;Signaling by Interleukins;Interleukin-4 and Interleukin-13 signaling	2	cilnidipine;pyrimethamine
+tox21-are-bla-p1	Immune System;Adaptive Immune System;Class I MHC mediated antigen processing & presentation;Antigen processing-Cross presentation;ER-Phagosome pathway	2	lopinavir;exemestane
+tox21-rt-viability-hek293-p1	Signal Transduction;Signaling by Rho GTPases;RHO GTPase Effectors;RHO GTPases Activate WASPs and WAVEs	2	digoxin;cisapride
+tox21-pr-bla-antagonist-p1	Signal Transduction;Signaling by Non-Receptor Tyrosine Kinases;Signaling by PTK6;PTK6 Expression	2	methylprednisolone;tolvaptan

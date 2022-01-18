@@ -40,6 +40,11 @@
 + Model interpretation analysis and comparison
   + [`analysis_interpret/compute_hyperparameter_similarity.R`](analysis_interpret/compute_hyperparameter_similarity.R) compares the significant DTox paths detected under different hyperparameter settings of layer-wise relevance propagation rule on Tox21 datasets, and compute Jaccary Index to measure the similarity among distinct hyperparameter settings.
   + [`analysis_interpret/visualize_hyperparameter_similarity.py`](analysis_interpret/visualize_hyperparameter_similarity.py) uses heatmap to visualize the similarity of significant DTox paths under different hyperparameter settings of layer-wise relevance propagation rule on Tox21 datasets.
+  + [`analysis_expression/valid_interpret_by_expression.R`](analysis_expression/valid_interpret_by_expression.R) uses LINCS pertubation gene expression data to validate whether significant DTox paths (identified from model interpretation) are differentially expressed after compound treatment, and compare the proportion of differential expression to backtround DTox paths.
+  + [`analysis_expression/collect_valid_expression_results.R`](analysis_expression/collect_valid_expression_results.R) collects computed differential expression proportions of compounds from interpretation-validation result files, and performs t test to compare proportion among significant DTox paths vs among background DTox paths.
+  + [`analysis_expression/visualize_expression_validation.py`](analysis_expression/visualize_expression_validation.py) uses scatter plots to visualize the gene expression-validation of DTox interpretation results on Tox21 datasets, comparing the compound differential expression proportion compounds among significant DTox paths vs among background DTox paths.
+  + [`analysis_expression/analyze_interpret_expression.R`](analysis_expression/analyze_interpret_expression.R) analyzes gene expression-validated DTox paths from model interpretation on Tox21 datasets, and identifies recurrent differentially expressed DTox paths among compounds.
+  + [`analysis_expression/visualize_recurrent_path.py`](analysis_expression/visualize_recurrent_path.py) uses barplot to visualize the frequency of recurrent differentially expressed DTox paths from model interpretation results on Tox21 dataset of interest.
 
 ## Executable shell scripts
 
@@ -66,3 +71,6 @@
   + Result analysis 
     + [`run/analyze_dtox_results_compound_target_tox21_simple.sh`](run/analyze_dtox_results_compound_target_tox21_simple.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of simple machine learning model implementation on compound target binding-Tox21 assay outcome datasets. 
     + [`run/analyze_dtox_results_compound_target_tox21_dtox.sh`](run/analyze_dtox_results_compound_target_tox21_dtox.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of DTox model implementation on compound target binding-Tox21 assay outcome datasets under sorted Reactome pathway hierarchy, then compare and visualize model performance across different method implementations.
+
++ Model interpretation analysis and comparison
+  + [`run/valid_interpret_by_expression.sh`](run/valid_interpret_by_expression.sh) implements [`analysis_expression/valid_interpret_by_expression.R`](analysis_expression/valid_interpret_by_expression.R) to validate DTox model interpreatation results derived from different LRP rule hyperparameters. 
