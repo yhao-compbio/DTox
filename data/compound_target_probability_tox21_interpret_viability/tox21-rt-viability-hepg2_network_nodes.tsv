@@ -1,0 +1,21 @@
+node_id	node_name
+CID_55245	Mifepristone
+R-HSA-5357786	TNFR1 proapoptotic
+R-HSA-5357956	TNFR1/NF-kB
+R-HSA-75893	TNF signaling
+R-HSA-73887	DR signaling
+R-HSA-162582	Signal transduction
+R-HSA-5687128	MAPK6/MAPK4
+R-HSA-5684996	MAPK1/MAPK3
+R-HSA-5683057	MAPK cascades
+R-HSA-2028269	Hippo
+R-HSA-5668541	TNFR2/NF-kB
+R-HSA-1280215	Cytokine signaling
+R-HSA-168256	Immune system
+R-HSA-2132295	MHC class II
+R-HSA-1280218	Adaptive immune
+R-HSA-168164	TLR3 cascade
+R-HSA-166016	TLR4 cascade
+R-HSA-168898	TLR cascade
+R-HSA-168249	Innate immune
+root	Cell death (HepG2)

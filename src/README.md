@@ -51,6 +51,12 @@
     + [`analysis_standard/valid_interpret_by_standard.R`](analysis_standard/valid_interpret_by_standard.R) uses standard Reactome pathway-receptor patterns to validate whether significant DTox paths (identified from model interpretation) contains particular pattern matched with each compound, and compare the observed outcome with expected probability. 
     + [`analysis_standard/collect_valid_standard_results.R`](analysis_standard/collect_valid_standard_results.R) collects observed outcome and expected probability of compounds from interpretation-validation result files, then compute observed and expected proportion of validated compounds based on collected results.
     + [`analysis_standard/visualize_standard_validation.py`](analysis_standard/visualize_standard_validation.py)  uses density plot and barplot to visualize the standard pattern-validation of DTox interpretation results on Tox21 datasets, comparing the observed and expected proportion of validated compounds.
+  + Interpretation analysis on HepG2 cell viability assay
+    + [`analysis_viability/analyze_viability_path_assay.R`](analysis_viability/analyze_viability_path_assay.R) analyzes DTox module relevance scores of viability-related pathways in the context of two viability-related assays (CASP3/7 apoptosis and mitochondria toxicity), compares pathway relevance scores between active and inactive compounds, then uses survival plot to visualize the comparison.
+    + [`analysis_viability/analyze_viability_path_map.R`](analysis_viability/analyze_viability_path_map.R) analyzes viability-related DTox paths from model interpretation results in the context of drug-induced liver injury (DILI) adverse events and ATC drug classification, evaluates the enrichment of DILI events/ATC drug classes among compounds identified with viability-related DTox paths, then visualizes the relationships between viability-related DTox paths and DILI events/ATC drug classes by heatmap.
+    + [`analysis_viability/analyze_viability_network.R`](analysis_viability/analyze_viability_network.R) uses visNetwork package to visualize the flow of relevance along DTox viability-related paths between query compound, hidden pathway modules, and the HepG2 cell viability outcome.
+
++ [`functions.R`](functions.R) contains R functions required for other scripts in the repository.
 
 ## Executable shell scripts
 

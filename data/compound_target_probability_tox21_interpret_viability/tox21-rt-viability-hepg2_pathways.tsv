@@ -1,0 +1,10 @@
+node_id	pathway_id	pathway_name	pathway_name_short
+533	R-HSA-5357786	TNFR1-induced proapoptotic signaling	TNFR1 proapoptotic
+381	R-HSA-5357956	TNFR1-induced NFkappaB signaling pathway	TNFR1/NF-kB
+672	R-HSA-5668541	TNFR2 non-canonical NF-kB pathway	TNFR2/NF-kB
+738	R-HSA-5684996	MAPK1/MAPK3 signaling	MAPK1/MAPK3
+451	R-HSA-5687128	MAPK6/MAPK4 signaling	MAPK6/MAPK4
+569	R-HSA-2028269	Signaling by Hippo	Hippo
+464	R-HSA-2132295	MHC class II antigen presentation	MHC class II
+748	R-HSA-168164	Toll Like Receptor 3 (TLR3) Cascade	TLR3 cascade
+768	R-HSA-166016	Toll Like Receptor 4 (TLR4) Cascade	TLR4 cascade
