@@ -56,6 +56,12 @@
     + [`analysis_viability/analyze_viability_path_map.R`](analysis_viability/analyze_viability_path_map.R) analyzes viability-related DTox paths from model interpretation results in the context of drug-induced liver injury (DILI) adverse events and ATC drug classification, evaluates the enrichment of DILI events/ATC drug classes among compounds identified with viability-related DTox paths, then visualizes the relationships between viability-related DTox paths and DILI events/ATC drug classes by heatmap.
     + [`analysis_viability/analyze_viability_network.R`](analysis_viability/analyze_viability_network.R) uses visNetwork package to visualize the flow of relevance along DTox viability-related paths between query compound, hidden pathway modules, and the HepG2 cell viability outcome.
 
++ Model prediction 
+  + [`analysis_prediction/analyze_prediction_dili.R`](analysis_prediction/analyze_prediction_dili.R) analyzes the DTox HepG2 cell viability model prediction results on DSSTox compounds, compares the predicted outcome probability bewteen positive and negative DSSTox compounds associated with DILI phenotypes.
+  + [`analysis_prediction/visualize_prediction_dili.py`](analysis_prediction/visualize_prediction_dili.py) uses boxplot and barplot to visualize the comparison of DTox HepG2 viability prediction results between positive and negative compounds of drug-induced liver injury (DILI) phenotypes.
+  + [`analysis_prediction/analyze_prediction_diki.R`](analysis_prediction/analyze_prediction_diki.R) analyzes the DTox HEK293 cell viability model prediction results on DSSTox compounds, compares the predicted outcome probability bewteen positive and negative DSSTox compounds associated with drug-induced kidney injury (DIKI) phenotypes.
+  + [`analysis_prediction/visualize_prediction_diki.py`](analysis_prediction/visualize_prediction_diki.py) uses boxplot and barplot to visualize the comparison of DTox HEK293 viability prediction results between positive and negative compounds of drug-induced kidney injury (DIKI) phenotypes. 
+
 + [`functions.R`](functions.R) contains R functions required for other scripts in the repository.
 
 ## Executable shell scripts
@@ -89,3 +95,6 @@
     + [`run/valid_interpret_by_expression.sh`](run/valid_interpret_by_expression.sh) implements [`analysis_expression/valid_interpret_by_expression.R`](analysis_expression/valid_interpret_by_expression.R) to validate DTox model interpreatation results derived from different LRP rule hyperparameters.
   + Interpretation validation by standard pathway-receptor pattern
     + [`run/valid_interpret_by_standard.sh`](run/valid_interpret_by_standard.sh) implements [`analysis_standard/valid_interpret_by_standard.R`](analysis_standard/valid_interpret_by_standard.R) to validate DTox model interpreatation results derived from different LRP rule hyperparameters.
+
++ Model prediction
+  + [`run/predict_dtox.sh`](run/predict_dtox.sh) implements [`predict_dtox.py`](predict_dtox.py) to predict HepG2 and HEK293 viability outcome using the respective trained optimal DTOx model.
