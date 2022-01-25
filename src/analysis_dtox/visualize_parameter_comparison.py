@@ -24,7 +24,7 @@ plt.rc('font', size = 20)
 # data columns to be plotted, column names, and x-axis ranges
 plot_columns = ['n_training', 'n_pathway_module', 'n_dtox_parameters', 'dtox_training_parameters_ratio', 'dtox_mlp_parameters_ratio']
 plot_xlabels = ['#Training samples', '#Pathway modules', '#VNN parameters', 'VNN samples/parameters %', 'VNN/MLP parameters %']
-plot_xlims = [[4000, 6500], [0, 610], [0, 60000], [0, 0.34], [0, 0.06]]
+plot_xlims = [[4000, 6500], [0, 610], [0, 65000], [0, 0.32], [0, 0.06]]
 
 ## 3. Visualize comparison of specified data columns across Tox21 datasets by barplot 
 # iterate by data column

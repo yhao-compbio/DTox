@@ -60,17 +60,17 @@ dtox_optimal_n_connect <- mapply(function(dohf1, dohf2, dohf3, dohf4, dohf5){
 		# obtain the module size of current node  
 		ddn_id <- which(ds_df$node %in% ddn);
 		ddn_ns <- ds_df$module_size[[ddn_id]];
-		# compute number of weight parameters: fully connected DTox linear net module plus linear auxiliary module  
-		dd_ns <- ddn_ns * sum(dds_ns) + ddn_ns;
+		# compute number of weight & bias parameters: fully connected DTox linear net module plus linear auxiliary module  
+		dd_ns <- (ddn_ns * sum(dds_ns) + ddn_ns) + (ddn_ns + 1);
 		return(dd_ns);
 	}, dk_df$node, dk_df$children_node);
 	# read in root pathway info as data frame  
 	dr_df <- read.delim(file = dohf3, header = T, sep = "\t");
-	# obtain the moduze sizes of root pathway nodes (root pathay nodes are connected to output by linear auxiliary module, so the size equals the number of weight parameters) 
+	# obtain the moduze sizes of root pathway nodes (root pathway nodes are connected to output by linear auxiliary module, so the size equals the number of weight parameters) 
 	drd_id <- which(ds_df$node %in% dr_df$root);
 	dr_c_count <- ds_df$module_size[drd_id];
-	# sum up the parameters of all modules to get total number of parameters in DTox model 
-	c_count <- sum(dk_c_count) + sum(dr_c_count);
+	# sum up the parameters of all modules and bias of root module to get total number of parameters in DTox model 
+	c_count <- sum(dk_c_count) + sum(dr_c_count) + 1;
 	return(c_count);
 }, dtox_optimal_h_files[1, ], dtox_optimal_h_files[2, ], dtox_optimal_h_files[3, ], dtox_optimal_h_files[4, ], dtox_optimal_h_files[5, ]);
 # compute the ratio between number of training samples versus number of MLP parameters 
@@ -87,8 +87,8 @@ dtox_mlp_n_connect <- mapply(function(dodnhn, dodnf){
 	# add number of features in input layer to list
 	dodnhn_s <- c(dodnf, dodnhn_s, 1);
 	ds_len <- length(dodnhn_s);	
-	# compute number of weight parameters between two adjacent layers: fully connected linear net module 
-	ds_c_count <- sapply(1:(ds_len-1), function(dl) dodnhn_s[[dl]] * dodnhn_s[[dl+1]]);
+	# compute number of weight and bias parameters between two adjacent layers: fully connected linear net module 
+	ds_c_count <- sapply(1:(ds_len-1), function(dl) dodnhn_s[[dl]] * dodnhn_s[[dl+1]] + dodnhn_s[[dl+1]]);
 	# sum up the parameters of all layers to get total number of parameters in MLP model 
 	c_count <- sum(ds_c_count);
 	return(c_count);
