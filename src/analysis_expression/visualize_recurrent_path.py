@@ -40,8 +40,16 @@ plt.rc('ytick', labelsize = 30)
 plt.rc('legend', fontsize = 30)
 
 ## 3. Make barplot
+# iterate by DTox path to be plotted, assign plotting color to bar of each DTox path 
+path_color = []
+for qrlp in query_recurrent_lowest_path:
+	# red if the path is related to TP53, lightblue otherwise
+	if ('TP53' in qrlp) | ('TFAP2' in qrlp):
+		path_color.append('salmon')
+	else:
+		path_color.append('lightblue')
 # make barplot showing the occurrence frequency of selected differentially expressed DTox paths, which are named after the end pathways along each DTox path  
-ax = sns.barplot(x = 'n_compounds', y = 'lowest_path', data = query_recurrent_df, color = 'lightblue')
+ax = sns.barplot(x = 'n_compounds', y = 'lowest_path', data = query_recurrent_df, palette = path_color)
 # adjust width of each bar 
 new_h = 0.5
 for ap in ax.patches:
