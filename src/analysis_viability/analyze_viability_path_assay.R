@@ -119,13 +119,11 @@ for (lcmcl in 1:length(casp_module_compare_list)){
 		pch = 16,
 		col = "darkgray")
 	mtext("Survival function", side = 2, line = 2.7, cex = 1.35);
-	# add text specifying the FDR of current pathway, set color to red if significant  
+	# add text specifying the FDR of current pathway 
 	cmcl_fdr <- casp_module_compare_fdr[[lcmcl]]
 	if(cmcl_fdr < 0.01)	fdr_text <- paste("FDR = ", formatC(cmcl_fdr, format = "e", digit = 2), sep = "")
 	else	fdr_text <- paste("FDR = ", round(cmcl_fdr, 2), sep = "")
-	if(cmcl_fdr < 0.05)	fc <- "red" 
-	else	fc <- "black"
-	mtext(fdr_text, side = 1, line = -1.5, adj = 0.1, col = fc, cex = 1.2);
+	mtext(fdr_text, side = 1, line = -1.5, adj = 0.1, col = "black", cex = 1.2);
 	# add figure legend  
 	if(lcmcl == 1){
 		legend(5e-7, 0.015, c("caspase 3/7+", "caspase 3/7-"), pch = 16, cex = 1.8, col = c("darkorange", "darkgray"), bty = "n")		
@@ -143,7 +141,7 @@ mito_module_compare_list <- mapply(function(qp){
 	ccpd_pathway_df <- data.frame(compound_module_df$X, compound_pathway_df[, qp]); 
 	colnames(ccpd_pathway_df) <- c("compound_pubchem_cid", "pathway_relevance_score");
 	# merge pathway relevance score data frame with mitotox assay-compoud data frame, obtain relevance scores of current pathway for active compounds 
-	ccpd_relevance_df <- merge(casp_sample_df, ccpd_pathway_df, by = "compound_pubchem_cid"); 
+	ccpd_relevance_df <- merge(mito_sample_df, ccpd_pathway_df, by = "compound_pubchem_cid"); 
 	crd_pos_ids <- which(ccpd_relevance_df$assay_outcome == 1);
 	crd_pos_values <- ccpd_relevance_df$pathway_relevance_score[crd_pos_ids];
 	# sort obtained relevance scores, compute survival function after sorting 
@@ -222,13 +220,11 @@ for (lmmcl in 1:length(mito_module_compare_list)){
 		pch = 16,
 		col = "darkgray")
 	mtext("Survival function", side = 2, line = 2.7, cex = 1.35);
-	# add text specifying the FDR of current pathway, set color to red if significant   
+	# add text specifying the FDR of current pathway  
 	mmcl_fdr <- mito_module_compare_fdr[[lmmcl]]
 	if(mmcl_fdr < 0.01)	fdr_text <- paste("FDR = ", formatC(mmcl_fdr, format = "e", digit = 0), sep = "")
 	else	fdr_text <- paste("FDR = ", round(mmcl_fdr, 2), sep = "")
-	if(mmcl_fdr < 0.05)	fc <- "red"
-	else	fc <- "black"
-	mtext(fdr_text, side = 1, line = -1.5, adj = 0.1, col = fc, cex = 1.2);
+	mtext(fdr_text, side = 1, line = -1.5, adj = 0.1, col = "black", cex = 1.2);
 	# add figure legend
 	if(lmmcl == 1){
 		legend(5e-7, 0.024, c("mito toxicity+", "mito toxicity-"), pch = 16, cex = 1.8, col = c("darkorange", "darkgray"), bty = "n")
