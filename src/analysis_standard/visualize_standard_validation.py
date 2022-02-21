@@ -44,25 +44,25 @@ for aa in all_assays:
 	gs_ax = gs.subplots(sharex = True)
 	# select sampled expected proportion of validated compounds relevant to the current assay, make density plot showing the distribution of sampled expected proportions  
 	aa_sample_df = sample_df[sample_df.assay == aa]
-	sns.distplot(aa_sample_df.bg_sample.values, hist = True, fit = norm, kde = False, bins = 20, color = 'darkblue', ax = gs_ax[0])	
-	# set figure title (Tox21 assay name) and x-axis range (0-1) 
-	gs_ax[0].set_xlim(0, 1)
+	sns.distplot(aa_sample_df.bg_sample.values*100, hist = True, fit = norm, kde = False, bins = 20, color = 'darkblue', ax = gs_ax[0])	
+	# set figure title (Tox21 assay name) and x-axis range (0-100%) 
+	gs_ax[0].set_xlim(0, 100)
 	gs_ax[0].axis('off')
 	aa_target_name = assay_df[assay_df.assay == aa].assay_target.values[0]
 	gs_ax[0].set_title(aa_target_name, loc = 'right', color = 'red')
 	# select observed/expected proportion stat of validated compounds relevant to the current assay, make barplot showing the comparion between observed and expected proportion 
 	aa_compare_df = compare_df[compare_df.assay == aa]
-	bar_values1 = [aa_compare_df.standard_observed_ratio.values[0], aa_compare_df.standard_bg_med.values[0]]
-	bar_values2 = 1 - np.array(bar_values1)
+	bar_values1 = [aa_compare_df.standard_observed_ratio.values[0]*100, aa_compare_df.standard_bg_med.values[0]*100]
+	bar_values2 = 100 - np.array(bar_values1)
 	bar_pos = ['Observed', 'Expected']
 	gs_ax[1].barh(bar_pos, bar_values1, height = 0.6, color = 'tab:purple', edgecolor = 'black', linewidth = 1.2)
 	gs_ax[1].barh(bar_pos, bar_values2, height = 0.6, left = bar_values1, color = 'white', edgecolor = 'black', linewidth = 1.2)
 	# add error bar showing the 95% confidence interval of expected proportion  
-	bar_err_x = [aa_compare_df.standard_bg_95ci_lower.values[0], aa_compare_df.standard_bg_95ci_upper.values[0]]
+	bar_err_x = [aa_compare_df.standard_bg_95ci_lower.values[0]*100, aa_compare_df.standard_bg_95ci_upper.values[0]*100]
 	bar_err_y = ['Expected', 'Expected'] 
 	gs_ax[1].plot(bar_err_x, bar_err_y, linewidth = 1.5, color = 'k')	
-	# set x-axis range (0-1)
-	gs_ax[1].set_xlim(0, 1)
+	# set x-axis range (0-100%)
+	gs_ax[1].set_xlim(0, 100)
 	gs_ax[1].set_xlabel('Validated compounds %')
 	gs_ax[1].spines['top'].set_visible(False)
 	gs_ax[1].spines['right'].set_visible(False)

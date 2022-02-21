@@ -38,9 +38,6 @@ pv_df = pd.concat(qd_pv_df_list)
 ## 2. Specify size and parameters of scatter plot 
 fig, gs_ax = plt.subplots(len(query_dt), len(query_assay),  figsize = (6*len(query_assay), 6*len(query_dt)))
 plt.rc('font', size = 35)
-xy_lim = [[0, 0.3], [0, 0.1], [0, 0.3], [0, 0.25]]
-xy_line = [[0, 0.3], [0, 0.1], [0, 0.3], [0, 0.25]]
-xy_tick = [[0, 0.1, 0.2, 0.3], [0, 0.05, 0.1], [0, 0.1, 0.2, 0.3], [0, 0.1, 0.2]]
 
 ## 3. Make scatter plots 
 # iterate by query Tox21 assay dataset, make scatter plots showing the comparison of differential expression proportion of compounds from each assay      
@@ -57,8 +54,8 @@ for lqa in range(0, len(query_assay)):
 		lqd_dt = query_dt[lqd]
 		lqd_result_df1 = lqa_result_df[lqa_result_df.dose == lqd_dt[0]]
 		lqd_result_df = lqd_result_df1[lqd_result_df1.time == lqd_dt[1]]
-		lqd_x = lqd_result_df.background_sig_ratio.values
-		lqd_y = lqd_result_df.interpret_sig_ratio.values
+		lqd_x = lqd_result_df.background_sig_ratio.values * 100
+		lqd_y = lqd_result_df.interpret_sig_ratio.values * 100
 		# specify color for each proportion point: blue for significant > background, gray otherwise  
 		lqd_point_color = []
 		for lx in range(0, len(lqd_x)):
@@ -69,7 +66,7 @@ for lqa in range(0, len(query_assay)):
 		# make scatter plot showing the comparison between differential expression proportion of compounds among significant DTox paths vs among background DTox paths 
 		gs_ax[lqd][lqa].scatter(lqd_x, lqd_y, s = 15, c = lqd_point_color)
 		# add dashed diagonal line  
-		lqd_y_max = np.ceil(np.max(lqd_y)/0.05) * 0.05
+		lqd_y_max = np.ceil(np.max(lqd_y)/5) * 5
 		lqd_xy_line = [0, lqd_y_max]
 		gs_ax[lqd][lqa].plot(lqd_xy_line, lqd_xy_line, '--k')
 		# specify label and range for axes  
@@ -86,11 +83,11 @@ for lqa in range(0, len(query_assay)):
 			lqa_col = 'black'
 		gs_ax[lqd][lqa].text(0.8, 0.05, lqd_fdr_char, horizontalalignment = 'center', verticalalignment = 'center', transform = gs_ax[lqd][lqa].transAxes, size = 22, c = lqa_col)
 		# specify ticks for axes 
-		if lqd_y_max < 0.16:
-			lqd_ticks = np.arange(0, 1 + lqd_y_max/0.05) * 0.05
+		if lqd_y_max < 16:
+			lqd_ticks = np.arange(0, 1 + lqd_y_max/5) * 5
 		else:
-			lqd_ticks = np.arange(0, 1 + np.floor(lqd_y_max/0.1)) * 0.1
-			if lqd_y_max/0.05 % 2 == 1:
+			lqd_ticks = np.arange(0, 1 + np.floor(lqd_y_max/10)) * 10
+			if lqd_y_max/5 % 2 == 1:
 				lqd_ticks = np.insert(lqd_ticks, len(lqd_ticks), lqd_y_max)	
 		gs_ax[lqd][lqa].set_xticks(lqd_ticks)
 		gs_ax[lqd][lqa].set_yticks(lqd_ticks)

@@ -16,6 +16,9 @@ plot_file	= 'plot/compound_target_probability_tox21_implementation/parameter_com
  
 ## 1. Read in parameter stat of DTox and match MLP model as data frame  
 parameter_df = pd.read_csv(parameter_file, sep = '\t', header = 0) 
+# convert ratio to percentage
+parameter_df.dtox_training_parameters_ratio = parameter_df.dtox_training_parameters_ratio * 100
+parameter_df.dtox_mlp_parameters_ratio = parameter_df.dtox_mlp_parameters_ratio * 100
 
 ## 2. Specify plotting parameters 
 # figure and font size 
@@ -24,7 +27,7 @@ plt.rc('font', size = 20)
 # data columns to be plotted, column names, and x-axis ranges
 plot_columns = ['n_training', 'n_pathway_module', 'n_dtox_parameters', 'dtox_training_parameters_ratio', 'dtox_mlp_parameters_ratio']
 plot_xlabels = ['#Training samples', '#Pathway modules', '#VNN parameters', 'VNN samples/parameters %', 'VNN/MLP parameters %']
-plot_xlims = [[4000, 6500], [0, 610], [0, 65000], [0, 0.32], [0, 0.06]]
+plot_xlims = [[4000, 6500], [0, 610], [0, 65000], [0, 32], [0, 6]]
 
 ## 3. Visualize comparison of specified data columns across Tox21 datasets by barplot 
 # iterate by data column
