@@ -129,7 +129,7 @@ def sort_dtox_hierarchy(root_file, relation_file, node_size_file, layer_file, mi
 	input_module_size, output_module_size, output_root_size = compute_module_size(size_df, node_children_dict, min_path_size, max_module_size, layer_df, root)	
 
 	# 4. Compute basic statistics of DTox neural network model
-	hierarchy_stat, input_layer_size, hidden_layer_size = computmodel_statistics(layer_df, output_module_size)
+	hierarchy_stat, input_layer_size, hidden_layer_size = compute_hierarchy_statistics(layer_df, output_module_size)
 
 	return node_children_dict, input_module_size, output_module_size, root, output_root_size, hierarchy_stat, input_layer_size, hidden_layer_size
 
