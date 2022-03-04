@@ -67,7 +67,7 @@ def visualize_dataset_performane_comparison(file_df, ds_annot_df, plot_files):
 			ax.set_ylim(compare_measure_lims[lcm])
 			ax.set_ylabel(compare_measure_names[lcm])
 			# set x axis (different methods) ticks 
-			ax.set_xticks(x_posperformance metric)
+			ax.set_xticks(x_pos)
 			ax.set_xticklabels(file_df.method.values, rotation = 90)
 		# add dataset name as title to the barplot   
 		f.suptitle(j_ds_annot, size = 20) 
