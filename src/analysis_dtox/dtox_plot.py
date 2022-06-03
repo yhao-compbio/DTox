@@ -28,7 +28,13 @@ def visualize_dataset_performane_comparison(file_df, ds_annot_df, plot_files):
 	# specify metrics to be compared: AUROC and balanced accuracy  
 	compare_measures = ['testing_auc', 'testing_bac']
 	compare_measure_names = ['Area under ROC curve', 'Balanced accuracy']
-	compare_measure_lims = [(0.5, 0.92), (0.5, 0.8)]
+	compare_color = ['dodgerblue', 'salmon']
+	if 'shuffle' in plot_files:
+		compare_measure_lims = [(0.4, 0.92), (0.4, 0.8)]
+		f_height = 5
+	else:
+		compare_measure_lims = [(0.5, 0.92), (0.5, 0.8)]
+		f_height = 4
 	# iterate by Tox21 dataset  
 	for j in range(0, i_perf_df.shape[0]): 
 		# obtain full name of current Tox21 assay dataset  
@@ -39,7 +45,7 @@ def visualize_dataset_performane_comparison(file_df, ds_annot_df, plot_files):
 		if j_ds_annot == 'Cell viability':
 			j_ds_annot = j_ds_annot + ' (' + j_ds_row.cell_line + ')'
 		# specify figure and font size 
-		f = plt.figure(figsize = (2*len(compare_measures), 4))
+		f = plt.figure(figsize = (2*len(compare_measures), f_height))
 		plt.rc('font', size = 18)
 		plt.rc('axes', titlesize = 18)
 		plt.rc('axes', labelsize = 18)
@@ -58,7 +64,7 @@ def visualize_dataset_performane_comparison(file_df, ds_annot_df, plot_files):
 			x_pos = np.arange(0, len(cm_value))
 			# make barplot showing the extracted performance metric values and 95% CIs 
 			ax = f.add_subplot(int('1' + str(len(compare_measures)) + str(lcm+1)))
-			ax.bar(x_pos, cm_value, yerr = cm_error, align = 'center', ecolor = 'black', capsize = 2)
+			ax.bar(x_pos, cm_value, yerr = cm_error, align = 'center', color = compare_color[lcm], ecolor = 'black', capsize = 2)
 			# remove axes on the top, bottom, and right
 			ax.spines['right'].set_visible(False)
 			ax.spines['top'].set_visible(False)

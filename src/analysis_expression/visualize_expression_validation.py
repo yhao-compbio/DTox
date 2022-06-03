@@ -46,7 +46,7 @@ for lqa in range(0, len(query_assay)):
 	lqa_assay = query_assay[lqa]
 	lqa_result_df = result_df[result_df.assay == lqa_assay]
 	# obtain the t test P-value for the comparison for current Tox21 assay, use FDR to perform multiple testing correction
-	lqa_pv = pv_df[pv_df.assay == lqa_assay].t_pv.values	
+	lqa_pv = pv_df[pv_df.assay == lqa_assay].wilcox_pv.values	
 	lqa_reject, lqa_fdr, _, _ = multipletests(lqa_pv, method = 'fdr_bh')
 	# iterate by query dose-time combination, make scatter plot showing the comparison of differential expression proportion of compounds from each combination 
 	for lqd in range(0, len(query_dt)):
@@ -81,7 +81,14 @@ for lqa in range(0, len(query_assay)):
 			lqa_col = 'red'
 		else:
 			lqa_col = 'black'
-		gs_ax[lqd][lqa].text(0.8, 0.05, lqd_fdr_char, horizontalalignment = 'center', verticalalignment = 'center', transform = gs_ax[lqd][lqa].transAxes, size = 22, c = lqa_col)
+		gs_ax[lqd][lqa].text(1, 0.05, lqd_fdr_char, horizontalalignment = 'right', verticalalignment = 'center', transform = gs_ax[lqd][lqa].transAxes, size = 20, c = lqa_col)
+		#
+		lqd_p_char = 'P = ' + str(lqa_pv[lqd])
+		if lqa_pv[lqd] <= 0.05:
+			lp_col = 'red'
+		else:
+			lp_col = 'black'
+		gs_ax[lqd][lqa].text(1, 0.12, lqd_p_char, horizontalalignment = 'right', verticalalignment = 'center', transform = gs_ax[lqd][lqa].transAxes, size = 20, c = lp_col)
 		# specify ticks for axes 
 		if lqd_y_max < 16:
 			lqd_ticks = np.arange(0, 1 + lqd_y_max/5) * 5

@@ -36,7 +36,7 @@ for ods in range(0, optimal_df.shape[0]):
 	train_loss = ods_loss_df.training_total_loss.values
 	test_loss = ods_loss_df.testing_total_loss.values
 	# obtain the epoch when optimal model was reached  
-	optimal_point = ods_loss_df.shape[0] - 20
+	optimal_point = np.argmin(test_loss) + 1
 	# compute appropriate y-axis range for plotting  
 	min_loss = np.min(np.concatenate([train_loss, test_loss]))
 	max_loss = np.max(np.concatenate([train_loss, test_loss]))	

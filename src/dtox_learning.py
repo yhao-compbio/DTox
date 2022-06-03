@@ -107,13 +107,10 @@ def train_dtox_model(dtox_root_file, dtox_relation_file, dtox_node_size_file, dt
 		# check if early stop criterion has been met 
 		stop_function(current_test_total_loss, model, optimizer)
 		# if so, load the last checkpoint with the best model
-		if stop_function.early_stop:
+		if stop_function.early_stop or epoch == dtox_max_epoch:
 			stop_point_state = torch.load(dtox_model_name)
 			model.load_state_dict(stop_point_state['model_state_dict'])
 			optimizer.load_state_dict(stop_point_state['optimizer_state_dict'])
-			break
-		# stop training if the maximum epoch is reached  	
-		if epoch == dtox_max_epoch:
 			break
 	# store training and testing loss of every epoch in data frame form  	
 	train_epoch = np.arange(1, epoch+1)

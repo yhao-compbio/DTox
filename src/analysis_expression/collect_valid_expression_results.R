@@ -69,13 +69,14 @@ valid_collect <- mapply(function(vf, nvfi){
 			va_id <- which(vf_df$assay %in% va)
 			va_ip_ratio <- vf_df$interpret_sig_ratio[va_id]
 			va_bg_ratio <- vf_df$background_sig_ratio[va_id]
-			# perform one-sided t test to compare proportion among significant DTox paths vs among background DTox paths, obtain P-value of t test    
-			va_t_pv <- t.test(va_ip_ratio, va_bg_ratio, paired = T, alternative = "greater")$p.value
-			return(c(length(va_id), va_t_pv))
+			# perform one-sided wilcox test to compare proportion among significant DTox paths vs among background DTox paths, obtain P-value of t test    
+			va_w_pv <- wilcox.test(va_ip_ratio, va_bg_ratio, paired = T, alternative = "greater")$p.value
+			va_w_pv <- round(va_w_pv, 2)
+			return(c(length(va_id), va_w_pv))
 		}, vf_assays)
 		compare_pv <- t(compare_pv)
 		pv_df <- data.frame(t(valid_file_info[nvfi,]), vf_assays, compare_pv)
-		colnames(pv_df) <- c(colnames(valid_file_info), "assay", "n_compounds", "t_pv")
+		colnames(pv_df) <- c(colnames(valid_file_info), "assay", "n_compounds", "wilcox_pv")
 		return(ls = list(result = result_df, pv = pv_df))	
 	}
 }, valid_files, 1:nrow(valid_file_info), SIMPLIFY = FALSE);

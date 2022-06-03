@@ -1,4 +1,4 @@
-# The aim of this repository is to develop a knowledge-guided deep learning model to improve the interpretability of toxicity prediction. 
+# DTox (Deep learning for Toxicology): an interpretation framework for knowledge-guided neural networks
 
 ## Introduction 
  

@@ -13,8 +13,9 @@ input_data_folder	<- Args[1];		# folder name of input training-testing/validatio
 structure_feature	<- Args[2];		# indicator that represents whether input featues are structural (1: Yes, 0: No) 
 hierarchy_folder	<- Args[3];		# folder name of input sorted reactome hierarchy files  
 output_folder		<- Args[4];		# folder name of output files 
-N_cores			<- Args[5];		# number of CPUs 
-job_name		<- Args[6];		# job name 
+tune_alpha		<- Args[5];		# whether to tune alpha hyperparameter   
+N_cores			<- Args[6];		# number of CPUs 
+job_name		<- Args[7];		# job name 
 outcome_col		<- "assay_outcome";	# name of column that contains Tox21 assay outcome 
 
 ## 1. Process Tox21 dataset files 
@@ -77,7 +78,9 @@ part[[1]] <- mapply(function(adfv, dofv, hhv, hhsv){
 	# node layer number file  
 	hhsv_layer <- paste(hierarchy_folder, hhsv, "_layer.tsv", sep = "");
 	# minimal size of pathways 
-	min_path <- strsplit(hhv, "_")[[1]][[4]];
+	hhv_s <- strsplit(hhv, "_")[[1]];
+	hs_id <- which(hhv_s %in% "ps") + 1;
+	min_path <- hhv_s[[hs_id]];
 	# output file
 	adfv_output <- paste(dofv, adfv, "_", hhv, sep = "");
 	# put together first part that includes the files/parameters above
@@ -85,8 +88,8 @@ part[[1]] <- mapply(function(adfv, dofv, hhv, hhsv){
 	return(adfv_command);
 }, all_data_files_vec, data_output_folder_vec, h_heads_vec, h_heads_st_vec);
 # put together second part of DTox command that includes maximal size of node modules, coefficient for auxiliary loss, coefficient for L2 regularization 
-part[[2]] <- c("20 0.1 0.0001", "20 0.5 0.0001", "20 1 0.0001");
-# 
+if(as.logical(tune_alpha))	part[[2]] <- c("20 0.1 0.0001", "20 0.5 0.0001", "20 1 0.0001")
+if(!as.logical(tune_alpha))	part[[2]] <- c("20 0.5 0.0001")
 
 ## 4. Generate commands for jobs 
 commands <- generate.all.possible.hyperparameter.combinations(part);

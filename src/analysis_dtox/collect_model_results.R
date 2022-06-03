@@ -11,11 +11,12 @@ source("src/functions.R");
 ## 0. Input arguments
 Args		<- commandArgs(T);
 input_folder	<- Args[1];     	# folder name of model result file
-name_id		<- as.integer(Args[2]);	# number that indicates index of dataset name in the file name
-hyper_lower_id	<- as.integer(Args[3]);	# number that indicates lower bound index of hyperparameter (separated by underscore) in the file name 
-hyper_upper_id	<- as.integer(Args[4]);	# number that indicates lower bound index of hyperparameter (separated by underscore) in the file name 
-collect_mode	<- Args[5];		# character that indicates collection mode ('dtox' for collecting DTox model results, 'simple' for collecting simple machine learning model results, 'mlp' for collecting multi-layer perceptron model results) 
-output_folder   <- Args[6];		# folder name of output collection files  
+name_lower_id	<- as.integer(Args[2]);	# number that indicates lower bound index of dataset name (separated by underscore) in the file name
+name_upper_id	<- as.integer(Args[3]);	# number that indicates upper bound index of dataset name (separated by underscore) in the file name
+hyper_lower_id	<- as.integer(Args[4]);	# number that indicates lower bound index of hyperparameter (separated by underscore) in the file name 
+hyper_upper_id	<- as.integer(Args[5]);	# number that indicates upper bound index of hyperparameter (separated by underscore) in the file name 
+collect_mode	<- Args[6];		# character that indicates collection mode ('dtox' for collecting DTox model results, 'simple' for collecting simple machine learning model results, 'mlp' for collecting multi-layer perceptron model results) 
+output_folder   <- Args[7];		# folder name of output collection files  
 
 ## 1. Obtain names of model performance files  
 # list all files in model result file folder
@@ -27,7 +28,8 @@ all_perf_files <- sapply(all_perf_files, function(apf) paste(input_folder, apf, 
 # extract dataset name and hyperparameter setting from name of each model performance file 
 all_file_info <- mapply(function(apf){	
 	apf_s <- strsplit(apf, "_")[[1]];
-	apf_name <- apf_s[[name_id]];
+	if(is.na(name_upper_id))	apf_name <- apf_s[[name_lower_id]]
+	if(!is.na(name_upper_id))	apf_name <- paste(apf_s[name_lower_id:name_upper_id], collapse = "_");
 	apf_hyper <- paste(apf_s[hyper_lower_id: hyper_upper_id], collapse = "_");
 	apf_info <- c(apf_name, apf_hyper);	
 	names(apf_info) <- c("dataset_name", "hyperparameter_setting");
