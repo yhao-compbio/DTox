@@ -1,0 +1,159 @@
+lowest_level_pathway_id	lowest_level_pathway_name	path_compound_count	path_compound_ratio	general_pathway_id	general_pathway_name
+R-HSA-419408	Lysosphingolipid and LPA receptors	322	0.779661016949153	R-HSA-372790	Signaling by GPCR
+R-HSA-391908	Prostanoid ligand receptors	274	0.663438256658596	R-HSA-372790	Signaling by GPCR
+R-HSA-417957	P2Y receptors	270	0.653753026634383	R-HSA-372790	Signaling by GPCR
+R-HSA-420499	Class C/3 (Metabotropic glutamate/pheromone receptors)	259	0.627118644067797	R-HSA-372790	Signaling by GPCR
+R-HSA-388479	Vasopressin-like receptors	246	0.595641646489104	R-HSA-372790	Signaling by GPCR
+R-HSA-389397	Orexin and neuropeptides FF and QRFP bind to their respective receptors	218	0.527845036319613	R-HSA-372790	Signaling by GPCR
+R-HSA-2514859	Inactivation, recovery and regulation of the phototransduction cascade	217	0.525423728813559	R-HSA-372790	Signaling by GPCR
+R-HSA-426048	Arachidonate production from DAG	187	0.452784503631961	R-HSA-372790	Signaling by GPCR
+R-HSA-166208	mTORC1-mediated signalling	178	0.430992736077482	R-HSA-165159	mTOR signalling
+R-HSA-380972	Energy dependent regulation of mTOR by LKB1-AMPK	169	0.409200968523002	R-HSA-165159	mTOR signalling
+R-HSA-5625886	Activated PKN1 stimulates transcription of AR (androgen receptor) regulated genes KLK2 and KLK3	145	0.351089588377724	R-HSA-194315	Signaling by Rho GTPases
+R-HSA-444473	Formyl peptide receptors bind formyl peptides and many other ligands	129	0.312348668280872	R-HSA-372790	Signaling by GPCR
+R-HSA-392451	G beta:gamma signalling through PI3Kgamma	103	0.249394673123487	R-HSA-372790	Signaling by GPCR
+R-HSA-5663213	RHO GTPases Activate WASPs and WAVEs	92	0.222760290556901	R-HSA-194315	Signaling by Rho GTPases
+R-HSA-2122948	Activated NOTCH1 Transmits Signal to the Nucleus	89	0.215496368038741	R-HSA-157118	Signaling by NOTCH
+R-HSA-5673000	RAF activation	85	0.205811138014528	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-5674135	MAP2K and MAPK activation	83	0.200968523002421	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-187024	NGF-independant TRKA activation	83	0.200968523002421	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-1251985	Nuclear signaling by ERBB4	82	0.198547215496368	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-2428933	SHC-related events triggered by IGF1R	82	0.198547215496368	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-2179392	EGFR Transactivation by Gastrin	80	0.193704600484261	R-HSA-372790	Signaling by GPCR
+R-HSA-109704	PI3K Cascade	76	0.184019370460048	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-2586552	Signaling by Leptin	73	0.176755447941889	R-HSA-2586552	Signaling by Leptin
+R-HSA-354194	GRB2:SOS provides linkage to MAPK signaling for Integrins 	73	0.176755447941889	R-HSA-9006921	Integrin signaling
+R-HSA-196299	Beta-catenin phosphorylation cascade	72	0.174334140435835	R-HSA-195721	Signaling by WNT
+R-HSA-8943724	Regulation of PTEN gene transcription	71	0.171912832929782	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-9032845	Activated NTRK2 signals through CDK5	67	0.162227602905569	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-418597	G alpha (z) signalling events	65	0.157384987893462	R-HSA-372790	Signaling by GPCR
+R-HSA-9028335	Activated NTRK2 signals through PI3K	64	0.154963680387409	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-170968	Frs2-mediated activation	62	0.150121065375303	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-199920	CREB phosphorylation	61	0.147699757869249	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-5674499	Negative feedback regulation of MAPK pathway	54	0.130750605326877	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-2871796	FCERI mediated MAPK activation	54	0.130750605326877	R-HSA-168249	Innate Immune System
+R-HSA-6811558	PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling	54	0.130750605326877	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-8948751	Regulation of PTEN stability and activity	54	0.130750605326877	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-1250347	SHC1 events in ERBB4 signaling	54	0.130750605326877	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-6785807	Interleukin-4 and Interleukin-13 signaling	53	0.128329297820823	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-5663220	RHO GTPases Activate Formins	53	0.128329297820823	R-HSA-194315	Signaling by Rho GTPases
+R-HSA-9645135	STAT5 Activation	49	0.11864406779661	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-912526	Interleukin receptor SHC signaling	48	0.116222760290557	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-8983432	Interleukin-15 signaling	47	0.113801452784504	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-420092	Glucagon-type ligand receptors	47	0.113801452784504	R-HSA-372790	Signaling by GPCR
+R-HSA-9020958	Interleukin-21 signaling	46	0.11138014527845	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-375281	Hormone ligand-binding receptors	46	0.11138014527845	R-HSA-372790	Signaling by GPCR
+R-HSA-8985947	Interleukin-9 signaling	44	0.106537530266344	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-372708	p130Cas linkage to MAPK signaling for integrins	44	0.106537530266344	R-HSA-9006921	Integrin signaling
+R-HSA-8984722	Interleukin-35 Signalling	43	0.104116222760291	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-1059683	Interleukin-6 signaling	42	0.101694915254237	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-2453902	The canonical retinoid cycle in rods (twilight vision)	42	0.101694915254237	R-HSA-372790	Signaling by GPCR
+R-HSA-1266695	Interleukin-7 signaling	41	0.099273607748184	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-2173795	Downregulation of SMAD2/3:SMAD4 transcriptional activity	41	0.099273607748184	R-HSA-9006936	Signaling by TGF-beta family members
+R-HSA-9020956	Interleukin-27 signaling	39	0.0944309927360775	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-9026519	Activated NTRK2 signals through RAS	39	0.0944309927360775	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-8854691	Interleukin-20 family signaling	38	0.0920096852300242	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-8950505	Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation	38	0.0920096852300242	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-9020558	Interleukin-2 signaling	36	0.0871670702179177	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-912631	Regulation of signaling by CBL	35	0.0847457627118644	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-8849473	PTK6 Expression	35	0.0847457627118644	R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases
+R-HSA-202670	ERKs are inactivated	34	0.0823244552058111	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-9008059	Interleukin-37 signaling	33	0.0799031476997579	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-170984	ARMS-mediated activation	33	0.0799031476997579	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-187706	Signalling to p38 via RIT and RIN	33	0.0799031476997579	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-390648	Muscarinic acetylcholine receptors	31	0.0750605326876513	R-HSA-372790	Signaling by GPCR
+R-HSA-416482	G alpha (12/13) signalling events	31	0.0750605326876513	R-HSA-372790	Signaling by GPCR
+R-HSA-109704	PI3K Cascade	30	0.0726392251815981	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-9013695	NOTCH4 Intracellular Domain Regulates Transcription	30	0.0726392251815981	R-HSA-157118	Signaling by NOTCH
+R-HSA-9013700	NOTCH4 Activation and Transmission of Signal to the Nucleus	30	0.0726392251815981	R-HSA-157118	Signaling by NOTCH
+R-HSA-2173796	SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription	29	0.0702179176755448	R-HSA-9006936	Signaling by TGF-beta family members
+R-HSA-390666	Serotonin receptors	27	0.0653753026634383	R-HSA-372790	Signaling by GPCR
+R-HSA-2979096	NOTCH2 Activation and Transmission of Signal to the Nucleus	26	0.062953995157385	R-HSA-157118	Signaling by NOTCH
+R-HSA-380108	Chemokine receptors bind chemokines	25	0.0605326876513317	R-HSA-372790	Signaling by GPCR
+R-HSA-9013508	NOTCH3 Intracellular Domain Regulates Transcription	22	0.0532687651331719	R-HSA-157118	Signaling by NOTCH
+R-HSA-975110	TRAF6 mediated IRF7 activation in TLR7/8 or 9 signaling	22	0.0532687651331719	R-HSA-168249	Innate Immune System
+R-HSA-9017802	Noncanonical activation of NOTCH3	21	0.0508474576271186	R-HSA-157118	Signaling by NOTCH
+R-HSA-209560	NF-kB is activated and signals survival	21	0.0508474576271186	R-HSA-73887	Death Receptor Signalling
+R-HSA-390696	Adrenoceptors	19	0.0460048426150121	R-HSA-372790	Signaling by GPCR
+R-HSA-1253288	Downregulation of ERBB4 signaling	18	0.0435835351089588	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-419812	Calcitonin-like ligand receptors	16	0.0387409200968523	R-HSA-372790	Signaling by GPCR
+R-HSA-163615	PKA activation	16	0.0387409200968523	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-198693	AKT phosphorylates targets in the nucleus	15	0.036319612590799	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-1912408	Pre-NOTCH Transcription and Translation	13	0.0314769975786925	R-HSA-157118	Signaling by NOTCH
+R-HSA-1679131	Trafficking and processing of endosomal TLR	13	0.0314769975786925	R-HSA-168249	Innate Immune System
+R-HSA-6788467	IL-6-type cytokine receptor ligand interactions	12	0.0290556900726392	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-4641265	Repression of WNT target genes	12	0.0290556900726392	R-HSA-195721	Signaling by WNT
+R-HSA-205043	NRIF signals cell death from the nucleus	12	0.0290556900726392	R-HSA-73887	Death Receptor Signalling
+R-HSA-202430	Translocation of ZAP-70 to Immunological synapse	11	0.026634382566586	R-HSA-1280218	Adaptive Immune System
+R-HSA-1912420	Pre-NOTCH Processing in Golgi	11	0.026634382566586	R-HSA-157118	Signaling by NOTCH
+R-HSA-74749	Signal attenuation	11	0.026634382566586	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-8847993	ERBB2 Activates PTK6 Signaling	10	0.0242130750605327	R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases
+R-HSA-202433	Generation of second messenger molecules	9	0.0217917675544794	R-HSA-1280218	Adaptive Immune System
+R-HSA-450321	JNK (c-Jun kinases) phosphorylation and  activation mediated by activated human TAK1	9	0.0217917675544794	R-HSA-168249	Innate Immune System
+R-HSA-180024	DARPP-32 events	9	0.0217917675544794	R-HSA-372790	Signaling by GPCR
+R-HSA-193670	p75NTR negatively regulates cell cycle via SC1	9	0.0217917675544794	R-HSA-73887	Death Receptor Signalling
+R-HSA-198323	AKT phosphorylates targets in the cytosol	9	0.0217917675544794	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-8948747	Regulation of PTEN localization	9	0.0217917675544794	R-HSA-9006925	Intracellular signaling by second messengers
+R-HSA-9018519	Estrogen-dependent gene expression	9	0.0217917675544794	R-HSA-9006931	Signaling by Nuclear Receptors
+R-HSA-9634638	Estrogen-dependent nuclear events downstream of ESR-membrane signaling	9	0.0217917675544794	R-HSA-9006931	Signaling by Nuclear Receptors
+R-HSA-6783783	Interleukin-10 signaling	8	0.0193704600484262	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-202427	Phosphorylation of CD3 and TCR zeta chains	8	0.0193704600484262	R-HSA-1280218	Adaptive Immune System
+R-HSA-199920	CREB phosphorylation	8	0.0193704600484262	R-HSA-168249	Innate Immune System
+R-HSA-6798695	Neutrophil degranulation	8	0.0193704600484262	R-HSA-168249	Innate Immune System
+R-HSA-9634635	Estrogen-stimulated signaling through PRKCZ	8	0.0193704600484262	R-HSA-9006931	Signaling by Nuclear Receptors
+R-HSA-982772	Growth hormone receptor signaling	7	0.0169491525423729	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-9604323	Negative regulation of NOTCH4 signaling	7	0.0169491525423729	R-HSA-157118	Signaling by NOTCH
+R-HSA-2029481	FCGR activation	7	0.0169491525423729	R-HSA-168249	Innate Immune System
+R-HSA-2029482	Regulation of actin dynamics for phagocytic cup formation	7	0.0169491525423729	R-HSA-168249	Innate Immune System
+R-HSA-2871809	FCERI mediated Ca+2 mobilization	7	0.0169491525423729	R-HSA-168249	Innate Immune System
+R-HSA-2871837	FCERI mediated NF-kB activation	7	0.0169491525423729	R-HSA-168249	Innate Immune System
+R-HSA-202040	G-protein activation	7	0.0169491525423729	R-HSA-372790	Signaling by GPCR
+R-HSA-193648	NRAGE signals death through JNK	7	0.0169491525423729	R-HSA-73887	Death Receptor Signalling
+R-HSA-205025	NADE modulates death signalling	7	0.0169491525423729	R-HSA-73887	Death Receptor Signalling
+R-HSA-983695	Antigen activates B Cell Receptor (BCR) leading to generation of second messengers	6	0.0145278450363196	R-HSA-1280218	Adaptive Immune System
+R-HSA-2029485	Role of phospholipids in phagocytosis	6	0.0145278450363196	R-HSA-168249	Innate Immune System
+R-HSA-2730905	Role of LAT2/NTAL/LAB on calcium mobilization	5	0.0121065375302663	R-HSA-168249	Innate Immune System
+R-HSA-8849469	PTK6 Regulates RTKs and Their Effectors AKT1 and DOK1	5	0.0121065375302663	R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases
+R-HSA-389357	CD28 dependent PI3K/Akt signaling	4	0.00968523002421308	R-HSA-1280218	Adaptive Immune System
+R-HSA-389359	CD28 dependent Vav1 pathway	4	0.00968523002421308	R-HSA-1280218	Adaptive Immune System
+R-HSA-879415	Advanced glycosylation endproduct receptor signaling	4	0.00968523002421308	R-HSA-168249	Innate Immune System
+R-HSA-4641262	Disassembly of the destruction complex and recruitment of AXIN to the membrane	4	0.00968523002421308	R-HSA-195721	Signaling by WNT
+R-HSA-5610785	GLI3 is processed to GLI3R by the proteasome	4	0.00968523002421308	R-HSA-5358351	Signaling by Hedgehog
+R-HSA-209543	p75NTR recruits signalling complexes	4	0.00968523002421308	R-HSA-73887	Death Receptor Signalling
+R-HSA-9027283	Erythropoietin activates STAT5	4	0.00968523002421308	R-HSA-9006335	Signaling by Erythropoietin
+R-HSA-1236973	Cross-presentation of particulate exogenous antigens (phagosomes)	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-198933	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-2025928	Calcineurin activates NFAT	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-389513	CTLA4 inhibitory signaling	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-389948	PD-1 signaling	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-8851680	Butyrophilin (BTN) family interactions	3	0.00726392251815981	R-HSA-1280218	Adaptive Immune System
+R-HSA-844456	The NLRP3 inflammasome	3	0.00726392251815981	R-HSA-168249	Innate Immune System
+R-HSA-3769402	Deactivation of the beta-catenin transactivating complex	3	0.00726392251815981	R-HSA-195721	Signaling by WNT
+R-HSA-5099900	WNT5A-dependent internalization of FZD4	3	0.00726392251815981	R-HSA-195721	Signaling by WNT
+R-HSA-163615	PKA activation	3	0.00726392251815981	R-HSA-372790	Signaling by GPCR
+R-HSA-5610783	Degradation of GLI2 by the proteasome	3	0.00726392251815981	R-HSA-5358351	Signaling by Hedgehog
+R-HSA-193692	Regulated proteolysis of p75NTR	3	0.00726392251815981	R-HSA-73887	Death Receptor Signalling
+R-HSA-8849470	PTK6 Regulates Cell Cycle	3	0.00726392251815981	R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases
+R-HSA-199920	CREB phosphorylation	2	0.00484261501210654	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-392517	Rap1 signalling	2	0.00484261501210654	R-HSA-1280218	Adaptive Immune System
+R-HSA-168638	NOD1/2 Signaling Pathway	2	0.00484261501210654	R-HSA-168249	Innate Immune System
+R-HSA-1810476	RIP-mediated NFkB activation via ZBP1	2	0.00484261501210654	R-HSA-168249	Innate Immune System
+R-HSA-933542	TRAF6 mediated NF-kB activation	2	0.00484261501210654	R-HSA-168249	Innate Immune System
+R-HSA-201688	WNT mediated activation of DVL	2	0.00484261501210654	R-HSA-195721	Signaling by WNT
+R-HSA-4086398	Ca2+ pathway	2	0.00484261501210654	R-HSA-195721	Signaling by WNT
+R-HSA-5610780	Degradation of GLI1 by the proteasome	2	0.00484261501210654	R-HSA-5358351	Signaling by Hedgehog
+R-HSA-9027276	Erythropoietin activates Phosphoinositide-3-kinase (PI3K)	2	0.00484261501210654	R-HSA-9006335	Signaling by Erythropoietin
+R-HSA-9027277	Erythropoietin activates Phospholipase C gamma (PLCG)	2	0.00484261501210654	R-HSA-9006335	Signaling by Erythropoietin
+R-HSA-9027284	Erythropoietin activates RAS	2	0.00484261501210654	R-HSA-9006335	Signaling by Erythropoietin
+R-HSA-5654689	PI-3K cascade:FGFR1	2	0.00484261501210654	R-HSA-9006934	Signaling by Receptor Tyrosine Kinases
+R-HSA-445989	TAK1 activates NFkB by phosphorylation and activation of IKKs complex	1	0.00242130750605327	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-450302	activated TAK1 mediates p38 MAPK activation	1	0.00242130750605327	R-HSA-1280215	Cytokine Signaling in Immune system
+R-HSA-1169091	Activation of NF-kappaB in B cells	1	0.00242130750605327	R-HSA-1280218	Adaptive Immune System
+R-HSA-1236974	ER-Phagosome pathway	1	0.00242130750605327	R-HSA-1280218	Adaptive Immune System
+R-HSA-2122947	NOTCH1 Intracellular Domain Regulates Transcription	1	0.00242130750605327	R-HSA-157118	Signaling by NOTCH
+R-HSA-2424491	DAP12 signaling	1	0.00242130750605327	R-HSA-168249	Innate Immune System
+R-HSA-5621480	Dectin-2 family	1	0.00242130750605327	R-HSA-168249	Innate Immune System
+R-HSA-933543	NF-kB activation through FADD/RIP-1 pathway mediated by caspase-8 and -10	1	0.00242130750605327	R-HSA-168249	Innate Immune System
+R-HSA-390651	Dopamine receptors	1	0.00242130750605327	R-HSA-372790	Signaling by GPCR
+R-HSA-5626978	TNFR1-mediated ceramide production	1	0.00242130750605327	R-HSA-73887	Death Receptor Signalling
+R-HSA-8857538	PTK6 promotes HIF1A stabilization	1	0.00242130750605327	R-HSA-9006927	Signaling by Non-Receptor Tyrosine Kinases
