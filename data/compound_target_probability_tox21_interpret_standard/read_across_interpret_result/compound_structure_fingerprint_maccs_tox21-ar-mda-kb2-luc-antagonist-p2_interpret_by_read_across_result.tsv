@@ -1,0 +1,6 @@
+assay	tc_threshold	standard_observed_ratio_drugbank	standard_observed_ratio_comptoxai
+1	tox21-ar-mda-kb2-luc-antagonist-p2	0.8	0.0554298642533937	0.123303167420814
+2	tox21-ar-mda-kb2-luc-antagonist-p2	0.85	0.0339366515837104	0.104072398190045
+3	tox21-ar-mda-kb2-luc-antagonist-p2	0.9	0.0237556561085973	0.0780542986425339
+4	tox21-ar-mda-kb2-luc-antagonist-p2	0.95	0.0214932126696833	0.0712669683257919
+5	tox21-ar-mda-kb2-luc-antagonist-p2	1	0.0214932126696833	0.0644796380090498

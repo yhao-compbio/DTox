@@ -1,0 +1,6 @@
+assay	tc_threshold	standard_observed_ratio_drugbank	standard_observed_ratio_comptoxai
+1	tox21-er-luc-bg1-4e2-agonist-p2	0.8	0.152037617554859	0.241379310344828
+2	tox21-er-luc-bg1-4e2-agonist-p2	0.85	0.126959247648903	0.203761755485893
+3	tox21-er-luc-bg1-4e2-agonist-p2	0.9	0.0956112852664577	0.133228840125392
+4	tox21-er-luc-bg1-4e2-agonist-p2	0.95	0.0768025078369906	0.108150470219436
+5	tox21-er-luc-bg1-4e2-agonist-p2	1	0.0642633228840125	0.0877742946708464

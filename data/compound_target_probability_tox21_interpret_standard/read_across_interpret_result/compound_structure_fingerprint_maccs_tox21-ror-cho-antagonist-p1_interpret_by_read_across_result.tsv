@@ -1,0 +1,6 @@
+assay	tc_threshold	standard_observed_ratio_drugbank	standard_observed_ratio_comptoxai
+1	tox21-ror-cho-antagonist-p1	0.8	0	0.0162932790224033
+2	tox21-ror-cho-antagonist-p1	0.85	0	0.010183299389002
+3	tox21-ror-cho-antagonist-p1	0.9	0	0.00814663951120163
+4	tox21-ror-cho-antagonist-p1	0.95	0	0.00610997963340122
+5	tox21-ror-cho-antagonist-p1	1	0	0.00610997963340122

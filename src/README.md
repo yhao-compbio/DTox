@@ -20,6 +20,7 @@
   + [`simple/simple.py`](simple/simple.py) develops and evaluates simple machine learning model (random forest or gradient boosting).
     + [`simple/simple_learning.py`](simple/simple_learning.py) contains functions for building, evaluating, and implementing simple machine learning models.
     + [`run/run_simple.R`](run/run_simple.R) generates shell scripts that run simple machine learning models on Tox21 datasets under different hyperparameter settings.
+    + [`simple/interpret_by_lime.py`](simple/interpret_by_lime.py) implements LIME technique to explain sample-level predictions of simple machine learning models. 
 
 + Multi-layer perceptron neural network model
   + [`mlp/mlp.py`](mlp/mlp.py) develops and evaluates a fully connected Multi-Layer Perceptron (MLP) neural network model, otherwise with the same number of hidden layer/neuron as the matched DTox model. 
@@ -51,6 +52,9 @@
     + [`analysis_standard/valid_interpret_by_standard.R`](analysis_standard/valid_interpret_by_standard.R) uses standard Reactome pathway-receptor patterns to validate whether significant DTox paths (identified from model interpretation) contains particular pattern matched with each compound, and compare the observed outcome with expected probability. 
     + [`analysis_standard/collect_valid_standard_results.R`](analysis_standard/collect_valid_standard_results.R) collects observed outcome and expected probability of compounds from interpretation-validation result files, then compute observed and expected proportion of validated compounds based on collected results.
     + [`analysis_standard/visualize_standard_validation.py`](analysis_standard/visualize_standard_validation.py)  uses density plot and barplot to visualize the standard pattern-validation of DTox interpretation results on Tox21 datasets, comparing the observed and expected proportion of validated compounds.
+    + [`analysis_standard/interpret_by_read_across.R`](analysis_standard/interpret_by_read_across.R) implements Read-across to connect query compounds with query target based on their chemical similarity to source compounds in Drugbank/ComptoxAI.
+    + [`analysis_standard/collect_target_standard_results.R`](analysis_standard/collect_target_standard_results.R) collects the validation results by DTox, LIME, and Read-across regarding the interpretation task of connecting active compounds to their respective target receptor in four nuclear receptor assays.
+    + [`analysis_standard/visualize_target_standard_validation.py`](analysis_standard/visualize_target_standard_validation.py) uses line charts to visualize the validation performance comparison among DTox, LIME, and Read-across regarding the interpretation task of connecting active compounds to their respective target receptor in four nuclear receptor assays.
   + Interpretation analysis on HepG2 cell viability assay
     + [`analysis_viability/analyze_viability_path_assay.R`](analysis_viability/analyze_viability_path_assay.R) analyzes DTox module relevance scores of viability-related pathways in the context of two viability-related assays (CASP3/7 apoptosis and mitochondria toxicity), compares pathway relevance scores between active and inactive compounds, then uses survival plot to visualize the comparison.
     + [`analysis_viability/analyze_viability_path_map.R`](analysis_viability/analyze_viability_path_map.R) analyzes viability-related DTox paths from model interpretation results in the context of drug-induced liver injury (DILI) adverse events and ATC drug classification, evaluates the enrichment of DILI events/ATC drug classes among compounds identified with viability-related DTox paths, then visualizes the relationships between viability-related DTox paths and DILI events/ATC drug classes by heatmap.
@@ -76,6 +80,7 @@
 
 + Simple learning implementation
   + [`run/run_simple_compound_target_tox21.sh`](run/run_simple_compound_target_tox21.sh) runs [`run/run_simple.R`](run/run_simple.R) to generate [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) and [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh). [`run/simple_compound_target_probability_tox21_randomforest.sh`](run/simple_compound_target_probability_tox21_randomforest.sh) implements [`simple/simple.py`](simple/simple.py) to build random forest models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings. [`run/simple_compound_target_probability_tox21_xgboost.sh`](run/simple_compound_target_probability_tox21_xgboost.sh) implements [`simple/simple.py`](simple/simple.py) to build gradient boosting models on compound target binding-Tox21 assay outcome datasets under different hyperparameter settings.
+  + [`run/interpret_by_lime.sh`](run/interpret_by_lime.sh) implements [`simple/interpret_by_lime.py`](simple/interpret_by_lime.py) to compute the LIME feature relevance scores of all positive instances in the four nuclear receptor assays
 
 + Multi-layer perceptron neural network implementation 
   + [`run/run_mlp.sh`](run/run_mlp.sh) runs [`run/run_mlp.R`](run/run_mlp.R) to generate [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh). [`run/mlp_compound_target_probability_tox21_fully_connected.sh`](run/mlp_compound_target_probability_tox21_fully_connected.sh) implements [`mlp/mlp.py`](mlp/mlp.py) on compound target binding-Tox21 assay outcome datasets. 
@@ -91,6 +96,8 @@
     + [`run/analyze_dtox_results_compound_target_tox21_dtox.sh`](run/analyze_dtox_results_compound_target_tox21_dtox.sh) implements [`analysis_dtox/analyze_dtox_results.py`](analysis_dtox/analyze_dtox_results.py) to identify optimal hyperparameter setting of DTox model implementation on compound target binding-Tox21 assay outcome datasets under sorted Reactome pathway hierarchy, then compare and visualize model performance across different method implementations.
 
 + Model interpretation analysis and comparison
+  + Interpretation validation by standard pathway-receptor pattern
+    + [`run/interpret_by_read_across.sh`](run/interpret_by_read_across.sh) implements [`analysis_standard/interpret_by_read_across.R`](analysis_standard/interpret_by_read_across.R) to connect query compounds with the four nuclear receptors.  
   + Interpretation validation by gene expression
     + [`run/valid_interpret_by_expression.sh`](run/valid_interpret_by_expression.sh) implements [`analysis_expression/valid_interpret_by_expression.R`](analysis_expression/valid_interpret_by_expression.R) to validate DTox model interpreatation results derived from different LRP rule hyperparameters.
   + Interpretation validation by standard pathway-receptor pattern
