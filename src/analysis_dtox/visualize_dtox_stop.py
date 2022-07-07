@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 stop_summary_file	= 'data/compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_early_stop_summary_by_patience.tsv'
 plot_folder		= 'plot/compound_target_probability_tox21_implementation/early_stop/compound_target_fingerprint_maccs_probability_tox21_implementation_early_stop_summary_by_patience'	# name of output line chart folder  
 
-## 1. Visualize relative efficiency/performance of DTox under alternative tolerance settings 
-# read in computed relative efficiency/performance under alternative tolerance settings as data frame 
+## 1. Visualize relative efficiency/performance of DTox under alternative patience settings 
+# read in computed relative efficiency/performance under alternative patience settings as data frame 
 stop_summary_df = pd.read_csv(stop_summary_file, sep = '\t', header = 0)
 # specify figure and font size 
 fig = plt.figure(figsize = (12, 6))
@@ -24,7 +24,7 @@ plt.rc('axes', labelsize = 22)
 plt.rc('xtick', labelsize = 20)
 plt.rc('ytick', labelsize = 20)
 plt.rc('legend', fontsize = 20)
-# plot relative efficiency ~ alternative tolerance settings, with 95% confidence interval as error bar   
+# plot relative efficiency ~ alternative patience settings, with 95% confidence interval as error bar   
 ax1 = fig.add_subplot(121)
 run_time_error = stop_summary_df.loc[:, ['run_time_ratio_95ci_lower', 'run_time_ratio_95ci_upper']].T.values - stop_summary_df.run_time_ratio.values
 run_time_error = np.absolute(run_time_error) * 100
@@ -38,7 +38,7 @@ ax1.set_xlabel('Patience (default = 20)')
 ax1.set_ylabel('Model running time (% of default)')
 ax1.set_xticks([1, 5, 10, 15, 20])
 ax1.set_ylim(0, 102)
-# plot relative performance ~ alternative tolerance settings, with 95% confidence interval as error bar 
+# plot relative performance ~ alternative patience settings, with 95% confidence interval as error bar 
 ax2 = fig.add_subplot(122)
 perf_error = stop_summary_df.loc[:, ['performance_ratio_95ci_lower', 'performance_ratio_95ci_upper']].T.values - stop_summary_df.performance_ratio.values
 perf_error = np.absolute(perf_error) * 100

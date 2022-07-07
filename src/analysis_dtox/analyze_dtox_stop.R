@@ -28,10 +28,10 @@ tolerance	<- 1:20;
 max_epoch	<- 200;
 output_folder	<- "data/compound_target_probability_tox21_implementation/compound_target_probability_tox21_implementation_early_stop_summary";
 
-## 1. Compute the relative efficiency/performance of DTox under alternative tolerance settings (parameter of early stopping criterion)  
+## 1. Compute the relative efficiency/performance of DTox under alternative patience settings (parameter of early stopping criterion)  
 # read in optimal performance info of Tox21 datasets as data frame  
 perf_df <- read.delim(file = perf_file, header = T, sep = "\t");
-# iterate by Tox21 dataset of interest, compute the relative efficiency/performance of DTox under alternative tolerance settings
+# iterate by Tox21 dataset of interest, compute the relative efficiency/performance of DTox under alternative patience settings
 dataset_stop_summary <- mapply(function(pddn, pdhs){
 	# obtain the loss file name of current Tox21 dataset, read in the training/testing loss tracker as data frame 
 	pddn_s <- strsplit(pddn, "tox21-")[[1]][[2]];
@@ -49,7 +49,7 @@ dataset_stop_summary <- mapply(function(pddn, pdhs){
 		}
 		pddn_optimal_loc[[lptl]] <- pddn_optimal_id
 	}	
-	# compute the relative efficiency (running epochs of alternative setting vs default setting) of DTox under alternative tolerance settings 
+	# compute the relative efficiency (running epochs of alternative setting vs default setting) of DTox under alternative patience settings 
 	pddn_loc_tol <- 1:length(pddn_test_loss) - pddn_optimal_loc;
 	tol_run_epochs <- sapply(tolerance, function(tol){
 		tol_id <- which(pddn_loc_tol %in% tol)
@@ -58,7 +58,7 @@ dataset_stop_summary <- mapply(function(pddn, pdhs){
 		return(tol_run)
 	});
 	tol_run_time_ratio <- tol_run_epochs/length(pddn_test_loss);
-	# compute the relative performance (testing loss improvement of alternative setting vs default setting) of DTox under alternative tolerance settings
+	# compute the relative performance (testing loss improvement of alternative setting vs default setting) of DTox under alternative patience settings
 	tol_optimal_epochs <- mapply(function(tre, tol){
 		if(tre == max_epoch)	tre_opt <- pddn_optimal_id
 		else	tre_opt <- tre - tol 
@@ -77,7 +77,7 @@ all_dataset_stop_summary_file <- paste(output_folder, "_by_dataset.tsv", sep = "
 write.table(all_dataset_stop_summary, file = all_dataset_stop_summary_file, sep = "\t", col.names = T, row.names = F, quote = F);
 
 ## 2. Summerize the computed the relative efficiency/performance of DTox over all datasets 
-# iterate by alternative tolerance settings, summerize
+# iterate by alternative patience settings, summerize
 tol_stop_summary <- mapply(function(tol){
 	# compute the average relative efficiency across datasets and its 95% confidence interval  
 	tol_id <- which(all_dataset_stop_summary$patience %in% tol);
@@ -89,7 +89,7 @@ tol_stop_summary <- mapply(function(tol){
 	tol_ratio_vec <- c(tol_run_time_ratio_mean, tol_run_time_ratio_ci, tol_performance_ratio_mean, tol_performance_ratio_ci);
 	return(tol_ratio_vec);
 }, tolerance);
-# aggregate the computed statistics of relative efficiency/performance from all alternative tolerance settings, write to output file  
+# aggregate the computed statistics of relative efficiency/performance from all alternative patience settings, write to output file  
 tol_stop_summary_df <- data.frame(tolerance, t(tol_stop_summary));
 colnames(tol_stop_summary_df) <- c("patience", "run_time_ratio", "run_time_ratio_95ci_lower", "run_time_ratio_95ci_upper", "performance_ratio", "performance_ratio_95ci_lower", "performance_ratio_95ci_upper");
 tol_stop_summary_file <- paste(output_folder, "_by_patience.tsv", sep = "");
