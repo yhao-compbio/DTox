@@ -37,6 +37,8 @@
   + [`analysis_dtox/compute_dtox_connections.R`](analysis_dtox/compute_dtox_connections.R) computes total number of parameters in DTox and matched fully connected multi-layer perceptron (MLP) models.
   + [`analysis_dtox/visualize_parameter_comparison.py`](analysis_dtox/visualize_parameter_comparison.py) uses barplot to visualize comparison of DTox and MLP model statistics across Tox21 datasets.
   + [`analysis_dtox/visualize_training_loss.py`](analysis_dtox/visualize_training_loss.py) uses line charts to visualize evolution of training/testing loss over epoches during DTox learning process.
+  + [`analysis_dtox/analyze_dtox_stop.R`](analysis_dtox/analyze_dtox_stop.R) analyzes the relative efficiency/performance of DTox under alternative settings of early stopping criterion.
+  + [`analysis_dtox/visualize_dtox_stop.py`](analysis_dtox/visualize_dtox_stop.py) uses line charts to visualize the relative efficiency/performance of DTox under alternative settings of early stopping criterion. 
 
 + Model interpretation analysis and comparison
   + Interpretation result analysis 
