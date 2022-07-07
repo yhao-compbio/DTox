@@ -67,6 +67,10 @@
   + [`analysis_prediction/visualize_prediction_dili.py`](analysis_prediction/visualize_prediction_dili.py) uses boxplot and barplot to visualize the comparison of DTox HepG2 viability prediction results between positive and negative compounds of drug-induced liver injury (DILI) phenotypes.
   + [`analysis_prediction/analyze_prediction_diki.R`](analysis_prediction/analyze_prediction_diki.R) analyzes the DTox HEK293 cell viability model prediction results on DSSTox compounds, compares the predicted outcome probability bewteen positive and negative DSSTox compounds associated with drug-induced kidney injury (DIKI) phenotypes.
   + [`analysis_prediction/visualize_prediction_diki.py`](analysis_prediction/visualize_prediction_diki.py) uses boxplot and barplot to visualize the comparison of DTox HEK293 viability prediction results between positive and negative compounds of drug-induced kidney injury (DIKI) phenotypes. 
+  + [`analysis_prediction/analyze_list_hepg2.R`](analysis_prediction/analyze_list_hepg2.R) analyzes the DTox-predicted HepG2 cytotoxicity scores by EPA chemical list and DrugBank approval status list.
+  + [`analysis_prediction/visualize_list_hepg2.py`](analysis_prediction/visualize_list_hepg2.py) uses boxplot to visualize the distributions of predicted HepG2 cytotoxicity scores of compounds in EPA/DrugBank lists.
+  + [`analysis_prediction/analyze_list_hek293.R`](analysis_prediction/analyze_list_hek293.R) analyzes the DTox-predicted HEK293 cytotoxicity scores by EPA chemical list and DrugBank approval status list.
+  + [`analysis_prediction/visualize_list_hek293.py`](analysis_prediction/visualize_list_hek293.py) uses boxplot to visualize the distributions of predicted HEK293 cytotoxicity scores of compounds in EPA/DrugBank lists.
 
 + [`functions.R`](functions.R) contains R functions required for other scripts in the repository.
 

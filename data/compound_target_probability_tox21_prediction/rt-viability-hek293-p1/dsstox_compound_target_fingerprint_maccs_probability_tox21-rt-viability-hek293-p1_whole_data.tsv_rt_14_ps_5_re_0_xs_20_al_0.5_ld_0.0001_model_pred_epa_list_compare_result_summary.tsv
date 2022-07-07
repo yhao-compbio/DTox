@@ -1,0 +1,266 @@
+list_acronym	list_description	n_compound	compound_pred_score_median	neg_compare_wilcox_pv	pos_compare_wilcox_pv
+tbutylphenols	A list of tert-butyl phenols from the KEMI (Swedish Chemicals Agency).	52	0.7963849	1.08358685209442e-30	0.999999999995547
+phenantiox	List of possible phenolic antioxidants	113	0.5686059	6.83598802249336e-57	0.999999999978557
+bisphenols	This list represents a collection of Bisphenol Compounds	24	0.917825175	5.50187265505949e-16	0.999999961335844
+npinsect	Naturally occurring insecticides in the NORMAN Suspect List Exchange	16	0.76916008	2.79431830151017e-07	0.988863299146576
+casmi2017	The 2017 Critical Assessment of Small Molecules (CASMI) contest dataset	38	0.390531525	7.5346342149503e-11	0.814174829756838
+fentanyls	A list of fentanyl analogues include both compounds developed by pharmaceutical companies and as designer drugs.	33	0.5561612	8.80820944478252e-11	0.790774615018015
+mycotoxins	This is a set of mycotoxins, initiated by the contribution of spectra of 90 mycotoxins to MassBank.EU by Justin Renaud and colleagues from Agriculture and Agri-Food Canada, Government of Canada	20	0.461724	4.66052992273018e-08	0.754718977739382
+pbdes	A list of all 209 polybrominated diphenyl ethers	51	0.3785323	6.70976792743957e-26	0.716658300143079
+dioxins	Dioxins and dioxin-like compounds (DLCs) are compounds that are highly toxic environmental persistent organic pollutants. 	27	0.27735263	8.54490611380347e-13	0.372056414892007
+mycotox2	List of mycotoxins collected from public sources 	109	0.35439834	1.13372572766449e-23	0.213562609680547
+tscawp	EPA Toxic Substance Control Act (TSCA) Work Plan chemical list (2014 update) 	12	0.20301112	0.00144183941567698	0.202940589427384
+wikiantifungals	A list of Antifungals extracted from Wikipedia.	17	0.2766252	1.70871509016402e-05	0.141940234050259
+opioids	List of opioids and related metabolites	99	0.30935884	5.78017600162947e-30	0.0878440257373467
+ermodel	Dataset associated with 'Integrated Model of Chemical Perturbations of a Biological Pathway Using 18 In Vitro High-Throughput Screening Assays for the Estrogen Receptor' by Judson et al. 	13	0.1815115	0.0030023591200977	0.0733237336343993
+iarc1	This is the list of chemicals identified by the International Agency for Research on Cancer (IARC), in their monographs, as Carcinogenic to humans	11	0.15811129	0.00372487408730831	0.0668821892526272
+statins	Statins, also known as HMG-CoA reductase inhibitors or 3-hydroxy-3-methyl-glutaryl-coenzyme A reductase inhibitors, are a class of lipid-lowering medications.	10	0.231701615	0.00784495178887279	0.0491458003509823
+natoxaq	NaToxAq: Natural Toxins and Drinking Water Quality - From Source to Tap	41	0.31156307	4.50515654403998e-09	0.0406146241494367
+toxcast_phaseii	TOXCAST_PhaseII is the full set of chemicals screened in Phase II of the ToxCast program, consisting of TOXCAST_ph1v2, ph2 and e1k sublists.	15	0.1815115	0.00237675883212332	0.0393718401464937
+apcraretro	A list related to a publication comparing point-of-departure calculations based on high-throughput predictions of bioactivity, exposure predictions, and traditional hazard information.	13	0.17728497	0.0330318963613521	0.0181283378284209
+wikirodenticides	A list of rodenticides extracted from Wikipedia.	17	0.19875313	0.00568366538026725	0.0131862019141391
+nwatrqhhc	Human health ambient water quality criteria represent specific levels of chemicals or conditions in a water body that are not expected to cause adverse effects to human health. 	10	0.1480718	0.0339279394613266	0.0126532540835885
+waterqualcrit	National Recommended Water Quality Criteria Aquatic Life chemical list	10	0.1480718	0.0486955195755593	0.0108244453995738
+uathtargetsgc	GC-HRMS target list of University of Athens. Provided by the research group of Prof. Nikolaos Thomaidis.	74	0.27735263	1.29042055822814e-14	0.00626940328964437
+edsp21list2	EDSP21 Tier 1 Screening Chemicals: List 2	10	0.197572625	0.0262068535569918	0.00587280673174638
+toxcast_phasei	TOXCAST_PhaseI corresponds to the ph1v1 subset of TOXCAST (mostly pesticides) screened in Phase I of the ToxCast program.	15	0.17728497	0.0471016955406138	0.00444282254955933
+nrtchemicals	The U.S. National Response Team (NRT) is an organization of 15 Federal departments and agencies responsible for coordinating emergency preparedness and response to oil and hazardous substance pollution incidents.	11	0.15903844	0.0156805662857761	0.00368127946313796
+phytotoxins	A comprehensive toxic plant-phytotoxin (TPPT) database provided by <a href='http://dx.doi.org/10.1021/acs.jafc.8b01639' target='_blank'>Günthardt et al 2018, DOI: 10.1021/acs.jafc.8b01639</a>	379	0.30413654	7.57471840036799e-62	0.00269056179443743
+cyanometdb	CyanoMetDB is a comprehensive database of secondary metabolites from cyanobacteria	29	0.17509128	0.00358745172845635	0.00112989229275058
+wikiinsecticides	 List of Insecticides from Wikipedia	24	0.14920035	0.0374523013119928	0.000914920446555688
+casmi2014	The 2014 Critical Assessment of Small Molecules (CASMI) contest dataset	15	0.1847595	0.0594141056529982	0.000802766065571151
+scdm	The Superfund Chemical Data Matrix (SCDM) generates a list of the corresponding Hazard Ranking System (HRS) factor values, benchmarks, and data elements for a particular chemical.	45	0.16436023	1.41133117179269e-08	0.000665479631637634
+iarc2a	This is the list of chemicals identified by the International Agency for Research on Cancer (IARC), in their monographs, as Probably carcinogenic to humans	17	0.14313981	0.0453397078224601	0.000472853466957833
+fertilizers	A list of chemicals in fertilizers	10	0.151427835	0.103783174913169	0.000454626859710315
+wikiantivirals	List of Antiviral Chemicals on Wikipedia	18	0.142253737	0.210819528550248	0.000424558848828648
+cheminv_reactives	ToxCast Chemical inventory (CHEMINV) physical sample library list of chemicals that were deemed too reactive to include in HTS testing. 	11	0.18902776	0.111770425880007	0.000408753802602258
+wikiherbicides	A list of herbicides found as compiled from the Wikipedia list.	22	0.190299535	0.00901474837508996	0.000385555013346745
+funnames	This collection of chemicals has fun and interesting names 	22	0.185443615	0.00632586564740665	0.00037234283571696
+uoatargpharma	LC-MS/MS target list of University of Athens containing illicit drugs and pharmaceuticals	50	0.19987838	1.234730534714e-07	0.00031953089692026
+aopstressors	List of Adverse Outcome Pathway Stressors from the AOP Database	76	0.23876276	3.92287617884977e-11	0.000271520376551759
+algaltox	A list of Algal Toxins of potential interest	11	0.12890023	0.492508483075602	0.000241089472623704
+azodyes	List of Azo Dyes assembled from public sources 	112	0.2518247	2.16318308031063e-23	0.000173083890158198
+exposomexpl	Exposome-Explorer: Biomarkers of exposure to environmental risk factors for diseases	254	0.27735263	1.07491864456167e-57	7.86127980841621e-05
+vetdrugs	List of veterinary drugs sourced from various public sites including Wikipedia	38	0.189183025	0.000144348246848738	2.79427281112557e-05
+ccl4	The Contaminant Candidate List (CCL) is a list of contaminants that are known or anticipated to occur in public water systems. 	16	0.150171205	0.109703646381573	1.94548828859883e-05
+wikiantiseptics	A list of antiseptics extracted from Wikipedia 	30	0.15148302	0.0130594488174439	1.92020956787788e-05
+swisspest	SWISSPEST is a list of registered insecticides and fungicides in Switzerland along with their major transformation products. This list was used for a suspect screening approach described in Moschet et al 2013, DOI: 10.1021/ac4021598	48	0.183807685	0.000158963120083856	1.34672604165312e-05
+wikinsaids	A list of Nonsteroidal anti-inflammatory drug extracted from Wikipedia.	32	0.16754337	0.0103559769924342	1.21941719914816e-05
+iccvamskin	This is a list of recommended chemicals for evaluation of in vitro skin corrosion test methods  originally published in a 2004 ICCVAM performance standards document.  	12	0.12523622	0.584734914367735	9.05724196186921e-06
+eubiocides	List of compounds currently used in the EU as biocides or compounds recently banned as biocides from the 2015 NORMAN priority list, prioritized and assessed for exposure by NORMAN using data from ECHA and other sources.	31	0.15498216	0.0145650552673775	8.838633402413e-06
+peroxidesb	Class B - Concentration Hazard from the Classification List of Peroxide Forming Chemicals	11	0.12085862	0.744789681537563	8.76307944343971e-06
+pahlist	List of polycyclic aromatic hydrocarbons	43	0.26238585	1.98574779834672e-07	7.25403638385598e-06
+palsoral	ORAL Provisional Advisory Levels (PALs) for high priority chemicals including toxic industrial chemicals and chemical warfare agents.	22	0.16326428	0.0791003906526803	6.71479370304466e-06
+synthcannab	A list of synthetic cannabinoids assembled from public resources.	33	0.13103695	0.0282407579333462	6.5511849919462e-06
+ubadwgw	List of REACH registered substances detected in drinking (DW) or groundwater (GW) that do not meet PMT (Persistent, Mobile and Toxic) criteria 	12	0.12833124	0.750793760317972	5.49775330791555e-06
+massbankeusp	The MassBank.EU list contains curated chemicals (Schymanski/Williams) associated with the literature/tentative/unknown/SI spectra available on MassBank.EU that are not available as part of the full MassBank collection of reference standard spectra. 	60	0.184899055	1.62446283921082e-05	4.21917200565182e-06
+thsmoke	A collection of compounds for mass spectrometry suspect screening of Thirdhand Smoke (THS)	21	0.14797407	0.0404533465526814	2.80051138055016e-06
+httkhuman	List of chemicals available for toxicokinetic prediction in the R package “httk”	84	0.20144836	1.99969959071172e-11	2.75997148903103e-06
+tox21sl	TOX21SL is list of unique substances comprising the screening library for the Tox21 program, a multi-federal agency collaborative among the US EPA, NIH/NTP, NIH/NCATS, and the US FDA.	76	0.18053926	1.89689287896186e-05	1.9660174288558e-06
+pcbchemicals	This is a list of all 209 polychlorinated biphenyl chemicals	185	0.27735263	2.03543529137959e-63	1.22994266854616e-06
+fracfocus	FracFocus is the national hydraulic fracturing chemical registry. 	15	0.1271264	0.456145315450697	1.07959480891851e-06
+epadws	The EPA's Drinking Water Standard and Health Advisories Table summarizes EPA's drinking water regulations and health advisories, as well as reference dose (RFD) and cancer risk values, for drinking water contaminants.	30	0.15218054	0.0126542339935067	5.9408504761441e-07
+hdxexch	Observed species (deuterated and undeuterated) from the HDXNOEX list under hydrogen deuterium exchange conditions (Ruttkies, Schymanski et al. in prep.)	48	0.177688415	5.74857731692229e-05	5.49161072799779e-07
+iarc2b	This is the list of chemicals identified by the International Agency for Research on Cancer (IARC), in their monographs, as Possibly carcinogenic to humans	71	0.22499073	9.58405534954438e-09	4.79953652546327e-07
+epapfasinvivo	These PFAS have published animal toxicity studies available in the online HERO database.	10	0.07893882	0.997528776738179	4.1449359740696e-07
+epapfaslitsearch	A literature review of published toxicity studies for these PFAS	10	0.07893882	0.997528776738179	4.1449359740696e-07
+dnteffects	This is a list of chemicals with data demonstrating effects on neurodevelopment	20	0.13262058	0.466515549433869	3.70852088398147e-07
+palsinhalation	INHALATION Provisional Advisory Levels (PALs) for high priority chemicals including toxic industrial chemicals and chemical warfare agents.	32	0.17084238	0.00129577071057146	2.59279179493033e-07
+iccvamocular	Recommended Substances for Optimization or Validation of In Vitro Ocular Toxicity Test Methods	18	0.108800052	0.870171775594744	1.28002808295651e-07
+natadb	The National-Scale Air Toxics Assessment (NATA) is EPA's ongoing comprehensive evaluation of air toxics in the United States.	20	0.136587175	0.310557817769301	8.76150594462995e-08
+biosolids	Chemicals detected in biosolids (nutrient-rich organic materials produced from wastewater treatment facilities)	170	0.27735263	9.43446037423407e-32	7.82449624077465e-08
+c10chloroparaff	List of chemical substances classed as 'chloroparaffins'	58	0.157667	8.82274230978347e-10	5.78803858967697e-08
+srm2585dust	SRM 2585: Organics in House Dust is a standard reference material used for the determination of selected PAHs, PCB congeners and other chemicals in house dust and similar matrices.	138	0.27735263	1.01706712843009e-29	5.25281111822915e-08
+extractpipes	List of chemicals from the article 'Characterization of Leachable Chemical Substances from Common Drinking Water Piping Materials'	33	0.12764719	0.238963854475447	4.82437122169291e-08
+humanneurotox	A set of chemicals listed in the article 'Developmental Neurotoxicity of Industrial Chemicals'	35	0.14621647	0.010553143184537	4.47298307504473e-08
+efsapri	List of 212 REACH substances prioritized by Oltmanns et al., DOI: <a href='http://doi.org/10.2903/sp.efsa.2019.EN-1597' target='_blank'>10.2903/sp.efsa.2019.EN-1597</a>,	40	0.164837965	0.0439496074254562	1.99824585185195e-08
+epapfasdw	EPA is developing and validating a new method for detecting these PFAS in drinking water sources. 	13	0.0936301	0.998000621060151	1.75504227343314e-08
+formaldehyder	List of formaldehyde releasers, formaldehyde donors or formaldehyde-releasing preservative is a chemical compound that slowly releases formaldehyde.	16	0.09290978	0.977513959508993	1.65958036066822e-08
+casmi2016test	The 2016 Critical Assessment of Small Molecules (CASMI) contest dataset	72	0.1803619	0.000183227952278428	1.3965040706832e-08
+normanews	The NORMAN Early Warning System (NormaNEWS) is a collaborative activity run by the NORMAN Network to investigate newly identified contaminants of emerging concern via retrospective screening on HRMS data.	44	0.070017305	0.869492277139541	1.13457015866929e-08
+tscastep2	As part of EPA’s chemical safety program, EPA has identified a work plan of chemicals for further assessment under the Toxic Substances Control Act (TSCA). EPA's TSCA Work Plan helps focus and direct the activities of its Existing Chemicals Program.	80	0.145932365	3.57975102038322e-05	6.91595787958495e-09
+epapfasnondw	EPA is developing and validating a new method for detecting these PFAS in non-drinking water sources. 	14	0.0936301	0.999010687186461	4.13131618935951e-09
+antimicrobials	A list of antimicrobials extracted from Wikipedia.	106	0.17599666	1.74195368835576e-08	3.56574302137457e-09
+uaccscec	A library containing the collision cross section (CCS) values of 311 adducts of 148 contaminants of emerging concern (CECs)	33	0.0936301	0.811688811559674	3.52967964063199e-09
+wikiflavors	A list of flavors as compiled from the Wikipedia list.	22	0.10572722	0.884984567426499	1.8036792840363e-09
+eawagsurf	EAWAGSURF is a list of surfactants screened in Swiss wastewater effluents as part of a 2014 study. Structures/mixtures are being progressively curated and linked (Schymanski/Williams). Further details in Schymanski et al 2014, DOI: 10.1021/es4044374	35	0.10038876	0.66442816627339	1.28877631303255e-09
+epapfasinsol	PFAS chemicals included in EPA’s expanded ToxCast chemical inventory found to be insoluble in DMSO above 5mM.	33	0.17047949	0.123537881642105	6.96639368549598e-10
+atsdrprofiles	Toxicological Profiles (Tox Profiles) are a unique compilation of toxicological information on a given hazardous substance. 	34	0.149624535	0.0428747295798025	5.83513181859989e-10
+hsdbtps	List of metabolites/transformation products (plus parents) extracted from the Metabolites/Metabolism section from HSDB (Hazardous Substance Data Bank)	25	0.061257802	0.994789846719254	5.26383038838786e-10
+ujiccslib	List of collision cross section (CCS) values for ~500 compounds	129	0.18727523	1.92175959701383e-09	4.53944291198374e-10
+epapfasvaldw	List of PFAS for which a Standard Drinking Water method (537.1 or 533) exists 	16	0.06424754	0.99981911204565	2.62708952147552e-10
+tdb2020	The Drinking Water Treatability Database (TDB) presents referenced information on the control of contaminants in drinking water.	26	0.108252583	0.865824879528052	2.57929027796921e-10
+atsdrlst	The Agency for Toxic Substances and Disease Registry (ATSDR)is a federal public health agency of the U.S. Department of Health and Human Services.	35	0.14706853	0.0377355136730078	2.14158992657628e-10
+ujibade	UJIBADE is a list of target substances from University Jaume I, Castellon, Spain used for retention time prediction in Bade et al 2015, DOI: 10.1016/j.scitotenv.2015.08.078	124	0.18794477	1.37732198331484e-11	1.38303313081956e-10
+ubapmt	List of REACH substances that could fulfill proposed (very) Persistent, (very) Mobile and Toxic (PMT/vPvM) criteria	66	0.15511438	0.00458439378062305	1.33521096117809e-10
+pfastdb	The Drinking Water Treatability Database (TDB) presents referenced information on the control of contaminants in drinking water. This list is a subset of PFAS chemicals contained in the TDB.	17	0.06664545	0.999939399326016	5.33582216837587e-11
+echaplastics	List with several categories released on <a href='https://echa.europa.eu/mapping-exercise-plastic-additives-initiative' target='_blank'>ECHA's 'Mapping exercise – Plastic additives initiative'</a>	139	0.1914716	3.30522595195146e-15	5.19033993763644e-11
+athenssus	ATHENSSUS is a compilation of suspects, predicted transformation products and surfactants screened in wastewater by University of Athens, as described in Gago-Ferrero et al 2015, DOI: 10.1021/acs.est.5b03454	25	0.057999797	0.999584400727878	1.78353977607434e-11
+luxpest	A pesticide screening list for Luxembourg, compiled from multiple sources by Jessy Krier, University of Luxembourg	129	0.186223	1.1409066483145e-08	4.01836626369636e-12
+vocbinbase	The volatile compound BinBase (VOC BinBase) database system was developed for the analysis of GC-TOF-MS data derived from complex volatile mixtures. 	44	0.10445883	0.692114457312126	3.36770453939912e-12
+scilgreenhalfcircle	Safer Chemical Ingredients List (SCIL) 2019 Green Half Circle Subset	27	0.082250684	0.994849066398922	2.10507074631623e-12
+pestactives	List of active ingredients in pesticides UPDATED 10/25/2019	104	0.172938795	1.89431122518303e-06	1.80531409312841e-12
+kwrsjerps	KWRSJERPS is a list of prioritized suspects relevant for human health in drinking water from KWR Water in Nieuwegein, The Netherlands. The methods are detailed in Sjerps et al 2016, DOI: 10.1016/j.watres.2016.02.034	46	0.123207435	0.547806622392532	1.25926016428576e-12
+normanews2	NormaNEWS2 Retrospective Screening of New Emerging Contaminants (NORMANEWS2 on the NORMAN Suspect List Exchange)	94	0.152316695	0.000220041197947583	8.42472480918951e-13
+casmi2016train	The 2016 Critical Assessment of Small Molecules (CASMI) contest dataset	90	0.17618162	4.37848708603178e-05	4.25227358740772e-13
+nhanes2019	U.S. Centers for Disease Control and Prevention (CDC) conducts the National Health and Nutrition Examination Survey (NHANES) data	171	0.24497224	1.4560916408877e-17	2.56281126431533e-13
+nhanes_dkapraun	List of 2009-2010 chemical compounds from the National Health and Nutrition Examination Survey (NHANES)	42	0.0936301	0.965308780297464	1.1080596030706e-13
+sfeiwater	Chemicals monitored in the Regional Monitoring Program for Water Quality in San Francisco Bay (RMP)	389	0.27735263	6.78826686878172e-81	8.27132094452468e-14
+unctcors	University of North Carolina Center for Tobacco Regulatory Science and Lung Health E-liquid Database	30	0.10004722	0.995776230436738	7.63492787637082e-14
+foodplastics	List of chemical migrants in plastic food contact products	46	0.106095078	0.591767916094316	3.43129483940053e-14
+neurotoxins	This is a list of chemicals reported as neurotoxins that has been compiled from public resources including Ganfyd, ChEBI, Wikipedia, T3DB and various literature (mining) resources.	98	0.1466425	0.000733355463188863	3.04741514950615e-14
+antibiotics	List of antibiotics and related compounds	60	0.14636825	0.0998260661383303	2.72081871362968e-14
+tirecrumb	List of chemicals based on the Federal Research Action Plan (FRAP) on Recycled Tire Crumb Used on Playing Fields and Playgrounds	77	0.15218054	0.000645182138011272	8.52278999508916e-15
+sltchemdb	SLTChemDB is a database of chemicals in Smokeless Tobacco	61	0.14769365	0.076493644279641	6.14216388006857e-15
+sswqs	EPA has compiled state, territorial, and authorized tribal water quality standards that EPA has approved or are otherwise in effect for Clean Water Act purposes.  	64	0.147570165	0.0238113417748965	5.87556114274353e-15
+luxpharma	Pharmaceuticals marketed in Luxembourg	289	0.20465507	7.05908683180813e-28	3.56409432324982e-15
+pfaslcmsgcms	List of PFAS standards reported in an article regarding food contact materials.	25	0.06498732	0.999998811984692	2.71178357572534e-15
+psychocannab	List of synthetic cannabinoids and psychoactive compounds assembled from public resources.	298	0.226456355	4.36230455911375e-34	1.49957557071111e-15
+elements	The list of all elements in the periodic table of elements	58	0.15218054	0.000593047440497082	7.04565448692551e-16
+iarc3	This is the list of chemicals identified by the International Agency for Research on Cancer (IARC), in their monographs, as Not classifiable as to its carcinogenicity to humans	146	0.210937495	2.71436396829236e-15	6.20917656661099e-16
+eawagtps	Parent-Transformation Product Pairs of various micropollutants	78	0.131229265	0.350692709710665	1.03105968303923e-16
+metxbiodb	The Metabolite Reaction Database, MetXBioDB, is a biotransformation database underpinning the BioTransformer application.	729	0.23136696	1.44691884857142e-66	3.42455250896416e-17
+elsie	ELSIE:  Extractables and Leachables Safety Information Exchange	120	0.13820794	5.40875942130583e-05	9.49213478357105e-18
+flameretard	List of Flame Retardants including all polybrominated diphenyl ethers (PBDEs)	271	0.21766096	1.23334971418227e-33	8.06583589037697e-18
+cheminv_volatiles	List of volatile chemicals in EPA ToxCast chemical inventory physical sample library, CHEMINV	42	0.09924481	0.993928117580259	2.65177392025968e-18
+calwaterbds	California Central Valley water board oil field additive constituents list	58	0.13707146	0.413645981251998	1.95820882136634e-18
+pfasnordic	List of PFAS cited in the Nordic Working Paper on Per- and polyfluoroalkylether substances:identity, production and use (2020)	44	0.105275575	0.967754720016756	5.96537892655618e-19
+wikisolvents	A list of solvents as compiled from the Solvent Wikipedia list.	53	0.1192332	0.85133619719192	3.67642127112453e-19
+pprtvweb	The Provisional Peer-Reviewed Toxicity Values (PPRTVs) currently represent the second tier of human health toxicity values for the EPA Superfund and Resource Conservation and Recovery Act (RCRA) hazardous waste programs.	102	0.15978938	1.18167278827323e-06	2.99238424787425e-19
+dntscreen	DNTSCREEN is a list of chemicals that is being used in medium- and high-throughput in vitro and zebrafish assays.	172	0.158261045	7.859273225093e-09	1.18136304021701e-19
+toxrefdb2	The Toxicity Reference Database v2 structures information from over 5000 in vivo toxicity studies	162	0.158766085	8.01040175901615e-07	9.25501956243663e-20
+ntuphtw	A suspect list containing pharmaceutically active substances	361	0.20465507	1.17590738762463e-32	4.55724676216992e-20
+aeglvalues	Acute exposure guideline levels (AEGLs) describe the human health effects from once-in-a-lifetime, or rare, exposure to airborne chemicals.	83	0.1494615	0.00271426861801721	5.31109410319409e-21
+scilyellowtriangle	Safer Chemical Ingredients List (SCIL)  2019 Yellow Triangle Subset	67	0.12132339	0.699841753927001	2.35321118093933e-21
+trirelease	Chemicals covered by the TRI Program cause one or more of the following: 1) Cancer or other chronic human health effects; 2) Significant adverse acute human health effects; 3) Significant adverse environmental effects	167	0.18408966	1.01466347101408e-13	2.15880251649183e-21
+cidyes	A list of dyes flagged with Color Index (C.I) codes	530	0.225826215	3.64690210051153e-57	1.60033375672278e-22
+epapfas75s2	PFAS list corresponds to a second set of 75 samples (Set 2) submitted for testing screens conducted by EPA researchers in collaboration with researchers at the National Toxicology Program.	62	0.1106109175	0.914726992093754	8.53112782026044e-23
+wrigchrms	GC-HRMS target list of the Slovak Water Research Institute (WRI).	257	0.18758482	7.1746580972668e-19	4.77912839302106e-23
+mndohtoxfree	The Minnesota Department of Health Toxic Free Kids Program Chemicals of High Concern list.	467	0.21766096	7.35119963819629e-52	1.84382717778115e-23
+epapfas75s1	PFAS list corresponds to 75 samples (Set 1) submitted for initial testing screens conducted by EPA researchers in collaboration with researchers at the National Toxicology Program.	52	0.09115897	0.999895852734408	1.43882214589831e-23
+heromap	The Health and Environmental Research Online (HERO) database provides an easy way to access and influence the scientific literature behind EPA science assessments.	119	0.15218054	2.63224981198522e-06	1.23841874630642e-23
+swisspharma	SWISSPHARMA is a list of pharmaceuticals with consumption data from Switzerland, France, Germany and the USA, used for a suspect screening/exposure modelling approach described in Singer et al 2016, DOI: 10.1021/acs.est.5b03332	313	0.1803619	7.1498926101363e-19	7.02789367157962e-24
+iris	EPA’s IRIS Program identifies and characterizes the health hazards of chemicals found in the environment. Each IRIS assessment can cover a chemical, a group of related chemicals, or a complex mixture.	111	0.1494615	0.000277988860640409	9.60060312379557e-25
+hzrdwastepu	The P and U Hazardous Waste lists designate as hazardous waste pure and commercial grade formulations of certain unused chemicals that are being disposed.	87	0.13000537	0.410273912627958	8.32374244226725e-25
+pfasntrev19	List of PFAS substances detected in non-target HRMS reviewed by Liu et al 2019	50	0.075601235	0.999999451191124	6.54027277993577e-25
+hairdyes	List of hair dyes published in a research study by Williams et al , North Carolina State University in the article Toward the Rational Design of Sustainable Hair Dyes Using Cheminformatics Approaches: Step 1. Database Development and Analysis	203	0.15828583	2.32884722181153e-07	5.34382890550527e-25
+volatilome2	VOLATILOME subset of compounds detected in human biological media including blood, dried blood spots (DBS), urine, exhaled breath condensate (EBC), and exhaled breath aerosols (EBA).  	70	0.1096921	0.984288577276403	4.47252396751973e-25
+pfastri	The National Defense Authorization Act (2020) added 160 PFAS chemicals to the Toxics Release Inventory (TRI)	68	0.102788487	0.979800226787315	1.3913480357365e-25
+slupesttps	Suspect list of pesticides and pesticide transformation products (TPs) from SLU (Swedish University of Agricultural Sciences)	102	0.102920902	0.940223154922425	4.75895924568203e-27
+nioshidlh	The immediately dangerous to life or health (IDLH) values are used by the National Institute for Occupational Safety and Health (NIOSH) as respirator selection criteria.	107	0.1494615	0.0131877604644672	3.54699679779822e-27
+bmdhha	Chemicals associated with the article 'Standardizing Benchmark Dose Calculations to Improve Science-Based Decisions in Human Health Assessments' by Wignall et al., 2014	170	0.153842595	1.9695012230613e-06	1.62198590911543e-27
+40cfr1164	Hazardous Substance List (40CFR116.4): related to Above Ground Storage Tanks	129	0.15859228	8.43878161406409e-05	1.21908669234539e-27
+itnantibiotic	ITNANTIBIOTIC is a list of antibiotics compiled by Nikiforos Alygizakis (Environmental Institute/University of Athens) as part of the Marie Skłodowska-Curie Actions (MSCA) Innovative Training Network (ITN) ANSWER (EU H2020 Grant 675530).	208	0.136079545	0.000199201971913704	8.0560896924394e-28
+oehha	The OEHHA Chemical Database is a compilation of health hazard information including reference exposure levels, California public health goals, child-specific reference doses, Propos. 65 safe harbor numbers, soil-screening levels, and fish advisories	252	0.16539289	4.7479494593806e-17	7.7490861615276e-28
+hdxnoex	Environmental standard set used to investigate hydrogen deuterium exchange in small molecule high resolution mass spectrometry (Ruttkies, Schymanski et al. in prep.)	221	0.1625374	1.26375859682826e-08	4.29308122370668e-28
+volatilsaliva	This list is a subset of compounds detected in saliva	101	0.11585561	0.650509346217661	6.20089604707831e-29
+cppdblista	List compiled from a database of chemicals likely (List A, 903) and possibly (List B, 3353) associated with plastic packaging from <a href='https://dx.doi.org/10.1016/j.scitotenv.2018.10.015' target='_blank'>Groh et al 2019</a>. 	249	0.15849373	1.67143321570701e-10	2.36375178370868e-29
+hazsubst	The list of extremely hazardous substances is defined in Section 302 of the U.S. Emergency Planning and Community Right-to-Know Act (42 U.S.C. 11002)	133	0.1494615	0.00364467074792964	5.93110231394966e-30
+ghsh240s	Chemicals that may cause a fire or explosion according to GHS	113	0.107682146	0.849524425400512	2.42471256238093e-30
+cwa311hs	Clean Water Act (CWA) Section 311(b)(2)(A) list of hazardous substances	142	0.15876038	9.49338189730203e-05	1.63612556447978e-30
+peroxidesd	Class D - Potential Peroxide Forming Chemicals from the Classification List of Peroxide Forming Chemicals	93	0.11433648	0.916799592871824	1.45202810852556e-31
+scogslist	The SCOGS database allows access to opinions and conclusions from 115 SCOGS reports published between 1972-1980	110	0.14118506	0.389648337474475	6.20347362369804e-33
+40cfr355	Extremely Hazardous Substance List and Threshold Planning Quantities; Emergency Planning and Release Notification Requirements; Final Rule. (52 FR 13378)	145	0.14301385	0.00923719593341648	1.85653921846639e-33
+usgswater	This list of chemicals are in the USGS list of chemicals in water	185	0.13921973	0.00977593363093919	7.8541475864716e-34
+refrigerants	List of refrigerants collected from public sources 	171	0.17297864	1.26016400482582e-11	1.58338822705675e-34
+acsreag	The ACS Committee on Analytical Reagents sets purity specifications for almost 500 reagent chemicals and over 500 standard-grade reference materials.	172	0.15840313	5.33806828784806e-06	9.93670663031808e-35
+nemilist	The National Environment Methods Index (NEMI) is a searchable database of environmental methods, protocols, statistical and analytical methods.	494	0.27735263	7.5979704712703e-60	1.66994454850032e-35
+ufzwanatarg	List of target compounds (LC and GC) measured at WANA, UFZ (Leipzig, Germany)	374	0.17303077	5.17389192364898e-14	2.75800431775518e-36
+webwiser	WISER is a system designed to assist emergency responders in hazardous material incidents. 	155	0.14797407	0.000720127986456508	6.17943774094233e-38
+cigarettes	This is a partial list of the 599 additives in cigarettes submitted to the United States Department of Health and Human Services in April 1994.	96	0.091911115	0.999946256022684	6.05686553151205e-38
+kemiwwsus	A subset of the prioritized list of 1,123 substances relevant for wastewater based on Swedish product registry data.	219	0.15218054	7.51851941957824e-06	4.01499429775194e-38
+osha	List of chemicals from the OSHA Occupational Chemical Database	175	0.14064804	0.0120305508132929	1.08282823522404e-39
+nioshnpg	The NIOSH Pocket Guide to Chemical Hazards (NPG) informs workers, employers, and occupational health professionals about workplace chemicals and their hazards.	168	0.14510417	0.0107786223002936	3.3215058906385e-41
+wrtmsd	This is a list of all the compounds contained in the 'Wiley Registry of Tandem Mass Spectral Data, MSforID' authored by Herbert Oberacher (Institute of Legal Medicine of the Medical University of Innsbruck, Austria). Further information at www.msforid.com	574	0.18690503	5.89395859587049e-30	3.31391250945104e-41
+normanct15	NORMANCT15 is a compilation of all target and suspect substances reported by participants in the NORMAN Collaborative Trial on Non-target Screening, run by the NORMAN Network and described in Schymanski et al 2015, DOI: 10.1007/s00216-015-8681-7	279	0.13896243	0.000271075286895813	1.99181145472599e-41
+epapfasrl	EPAPFASRL is a manually curated listing of mainly straight-chain and branched PFAS (Per- & Poly-fluorinated alkyl substances) compiled from various internal, literature and public sources by EPA researchers and program office representatives.	85	0.07201372	0.999999999998852	1.59185370086306e-42
+waterpcdl1	Chemical list derived from the Agilent Water Screening Personal Compound Database and Library (PCDL)	403	0.1625374	1.25510066431362e-12	1.56021452119855e-42
+litminedneuro	Chemicals associated with neurotoxicity via PubMed Literature Mining	456	0.158452535	3.04423271185068e-19	1.142540169924e-42
+scilgreencircle	Safer Chemical Ingredients List (SCIL)  2019 Green Circle Subset	120	0.095811495	0.999484899246557	7.04062659579559e-44
+uathtargets	A list of target substances measured at the Department of Chemistry, University of Athens. Provided by Nikiforos Alygizakis and Nikos Thomaidis. 	696	0.1896694	9.11597958842097e-42	4.61756907035375e-45
+storagetanks	Chemicals present in Underground Storage Tanks  	210	0.144327535	0.00101514748039972	7.81982462712261e-46
+epapfasresearch	The list of PFAS EPA is currently researching using various scientific approaches. 	124	0.098840244	0.999913959862921	1.05141362946766e-46
+normanpri	NORMANPRI contains the list of priority substances determined by the NORMAN Network Working Group 1 on Prioritization, provided by Valeria Dulio, INERIS, France. Further details on the website. 	292	0.141586135	0.000583122915280839	2.21141647344808e-48
+frenchlist	FRENCHLIST contains substances for prospective monitoring activities in France, developed in cooperation with the NORMAN Network Working Group 1 on Prioritization. Provided by Valeria Dulio, INERIS, France. Further details on the website. 	380	0.152543745	9.1366237259024e-09	1.39245259659244e-48
+epafhm	The EPA Fathead Minnow Acute Toxicity database was generated by the U.S. EPA Mid-Continental Ecology Division (MED)	241	0.12597202	0.077150830843807	8.72741883645412e-51
+ccscompend	Chemicals associated with >3800 experimental collision cross section (CCS) values	278	0.104644625	0.987091131943624	3.06002763755408e-51
+pfasgluege	An overview of the uses of per- and polyfluoroalkyl substances (PFAS) 	205	0.13596939	0.264296343880397	5.79520324646728e-53
+ppdb	The PPDB is a comprehensive relational database of pesticide chemical identity, physicochemical, human health and ecotoxicological data developed by the Agriculture & Environment Research Unit (AERU) at the University of Hertfordshire.	659	0.1753956	8.34359769895443e-32	3.70238218661905e-53
+pfasinvitro	PFAS chemicals tested in in vitro methods by the EPA and National Toxicology researchers.	144	0.098840244	0.999983295762953	7.51449808135765e-54
+atsdrmrls	The ATSDR Minimal Risk Levels (MRLs) were developed as an initial response to the Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA) 	274	0.131590725	0.0110278967844492	1.38670857345525e-54
+swgdrug	The Scientific Working Group for the Analysis of Seized Drugs (SWGDRUG) mass spectral library 	538	0.156737415	4.51517317616401e-13	1.68580234928902e-55
+flavornet	Flavornet is a compilation of aroma compounds found in human odor space.	195	0.10445883	0.994873277945209	5.55865264211631e-56
+pestinerts	List of Inert Ingredients Food and Nonfood Use UPDATED 10/25/2019	271	0.12965432	0.0561069090520511	1.68283971279981e-56
+ornlrsl	Chemicals associated with the Regional Screening Levels (RSLs) Generic Tables	499	0.16436023	7.07159955185765e-24	1.59849502789745e-57
+epamoa	MOAtox: A Comprehensive Mode of Action and Acute Aquatic Toxicity Database for Predictive Model Development	464	0.14999019	2.7165958660029e-11	1.24052896161341e-57
+eiubasurf	This surfactant suspect list is a compiled list of eco-labeled surfactants from Environmental Institute (EI, SK) and the German Federal Environmental Agency (UBA, DE).	166	0.08093593	0.999999979584349	1.07129163237002e-58
+allsurfactants	A set of surfactants made from the assembly of multiple surfactants list	202	0.0840795175	0.999999876884454	6.12994548265034e-64
+cheminv_dmsoinsolubles	Chemicals in EPA's ToxCast physical sample library CHEMINV insoluble in DMSO 	347	0.13730477	0.0093893788552277	5.00801526810422e-64
+toxcast_phaseiii	TOXCAST_PhaseIII is the full set of chemicals available for screening in Phase III of the ToxCast program, consisting of the majority of chemicals screened in Phase II and newly added ph3 chemicals.	375	0.13605823	0.00673355112640496	2.06541458921208e-64
+toxcast_ph3	TOXCAST_ph3 is the ph3 subset of TOXCAST, added to the most recent Phase III of the ToxCast program to further increase chemical diversity and coverage of chemicals of concern to EPA programs.	360	0.13301444	0.0201572587512584	1.33570899685031e-64
+epahfrtable2	Table H-2 . Chemicals reported to be used in hydraulic fracturing fluids from 2005-2013	249	0.1346107	0.369066445631254	1.06920974803289e-65
+toxcast_v3	InvitroDB is the list of chemicals with corresponding assay data in EPA's ToxCast Database (V3 public release, October 2018) 	434	0.136399925	0.00121527903889033	4.16025942076406e-67
+toxcast	TOXCAST is the complete list of chemicals having undergone some level of screening in EPA's ToxCast research program since 2007 (last updated 4/11/2017); sublists included.	390	0.135571105	0.0084672882838162	3.45544136773181e-67
+t3db	T3DB provides mechanisms of toxicity and target proteins for each toxin.	1445	0.21766096	1.08360001792603e-113	1.05807414296052e-67
+swisspest19	Swiss pesticides contributed to the NORMAN Suspect List Exchange	393	0.1248487	0.287245562833699	3.06227864932842e-69
+scilfull	Safer Chemical Ingredients List (SCIL) 2019 	215	0.10167293	0.999870419691887	2.34204629144187e-69
+epcralists	The List of Lists is a consolidated list of chemicals subject to: Emergency Planning and Community Right-to-Know Act (EPCRA), Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), and Section 112(r) of the Clean Air Act (CAA). 	465	0.15811129	3.89120402120717e-13	5.45702586728464e-72
+wormjam	WormJam: community effort for a unified C. elegans metabolic reconstruction	202	0.0748529025	1	1.32990998500482e-72
+dbp	List of disinfection by-products	228	0.10445883	0.999999967574897	2.791302809058e-78
+naphtha	Naphtha (petroleum), heavy hydrocracked assembled based on substructure searching and predicted boiling points.	526	0.156476395	4.70915148655139e-21	2.12801727694368e-80
+nioshicsc	The International Chemical Safety Cards (ICSC) summarize essential health and safety information on chemicals.	456	0.14875498	1.99156066495559e-05	1.94093275497586e-91
+pfastrier	PFASTRIER community-compiled public listing of PFAS (Trier et al, 2015)	381	0.13092488	0.641630687143557	2.32092129609202e-92
+epahfr	EPAHFR lists chemicals associated with hydraulic fracturing from 2005-20013, as reported in EPA’s Hydraulic Fracturing Drinking Water Assessment Final Report (Dec 2016)	475	0.13856365	0.00186869114786646	1.35586073844558e-92
+zinc15pharma	A list of >8600 pharmaceuticals retrieved from ZINC15, curated and provided by Reza Aalizadeh, University of Athens. 	2455	0.17571041	4.14630333862692e-59	8.58146568202757e-96
+drugbank	The DrugBank database combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information. 	2316	0.172608765	6.64996149377657e-54	3.2328051366922e-96
+epacons	This is a compiled list of the suspects reported in the supporting information of Phillips et al 2018, DOI: 10.1021/acs.est.7b04781 - Suspect Screening Analysis of Chemicals in Consumer Products with GCxGC-TOF/MS.	567	0.12892242	0.00561307366076203	1.10126587444655e-100
+volatilome	A subset of compounds detected in human breath	513	0.1251853	0.399406650778243	7.63067940452981e-103
+epapfasinv	PFAS chemicals included in EPA’s expanded ToxCast chemical inventory and available for testing.	350	0.104749136	0.999999934671701	4.21809802740945e-109
+cheminv	CHEMINV is full list of unique DSSTox substances mapped to historical chemical inventory of physical samples registered by EPA's ToxCast Chemical Contractor (Evotec) since launch of ToxCast program in 2007. 	766	0.136399925	0.000207427291882466	1.57914529669024e-112
+indoorct16	Lists of GC-MS and LC-MS compounds from the Indoor Dust Collaborative Trial	757	0.11071411	0.890175613018758	1.63297273663356e-117
+humanblood	List of chemicals natural to the body and detected in human blood (excluding metals, metal ions, gases, drugs and drug metabolites)	488	0.08645688	1	4.93143740587081e-118
+mzcloud	mzCloud is a state of the art mass spectral database that assists analysts in identifying compounds in areas such as life sciences, metabolomics, pharmaceutical research, toxicology, forensic investigations and environmental analysis.	2137	0.15458184	6.88287161361995e-25	4.55766097144257e-119
+epapcs	The entries in this list have been classified in the U.S. as pesticidal “active ingredients” (conventional, antimicrobial, or biopesticidal agents), and were sourced from the Pesticide Chemical Search database.	1406	0.14806166	3.51739319604331e-21	2.67980639651738e-121
+eisusgceims	GC-EI-MS suspect list of Environmental Institute.	1108	0.1384878	1.34956686070209e-10	1.83491015783789e-121
+oppin	Office of Pesticide Programs integrated system, the Office of Pesticide Programs Information Network (OPPIN).	1453	0.1472982	8.74383569868014e-21	2.56382176456096e-124
+cppdblistb	List compiled from a database of chemicals likely (List A, 903) and possibly (List B, 3353) associated with plastic packaging from <a href='https://dx.doi.org/10.1016/j.scitotenv.2018.10.015' target='_blank'>Groh et al 2019</a>.	948	0.13707146	9.71686722723467e-08	9.3224768829105e-125
+epahpv	The United States High Production Volume (USHPV) database contains information about chemicals that are included in the High Production Volume (HPV) Challenge Program.	901	0.14051262	1.21587435029906e-07	3.27428657415882e-129
+refchemdb	List of chemicals associated with the article Workflow for Defining Reference Chemicals for Assessing Performance of In Vitro Assays	24076	0.18889022	9.18016577338189e-247	2.07224738954947e-134
+epacheminv_avail	EPACHEMINV_AVAIL is list of unique DSSTox substances available as DMSO solutions for ToxCast and Tox21 partner projects, managed by EPA Chemical Contract Services.	779	0.12200237	0.727638854939833	7.19548299423515e-137
+wikipedia	Wikipedia includes data for thousands of chemicals. ChemBoxes and DrugBoxes includes data such as CAS Registry Numbers, SMILES and InChIs. 	5963	0.16944797	1.23290731212438e-124	4.21693527611562e-139
+pfaskemi	Perfluorinated substances from a Swedish Chemicals Agency (KEMI) Report on the occurrence and use of highly fluorinated substances.	844	0.13228477	0.0869828897292454	1.42098040733805e-152
+hsdb2019	Toxicology data focused on the toxicology of potentially hazardous chemicals.From the National Library of Medicine.	1941	0.15218054	2.46238970984396e-29	5.50519779148393e-154
+inertnonfood	List of chemicals listed in InertFinder as Non-Food Use Chemicals	1242	0.13136697	3.90034679872887e-05	5.24173396520248e-157
+kwrsjerps2	Suspect list from 'Data-driven prioritization of chemicals for various water types using suspect screening LC-HRMS' by Sjerps et al.	1749	0.1298378	1.40752763987999e-05	2.36643357048725e-170
+stoffident	STOFF-IDENT is a database of water relevant substances collated from various sources within the STOFF-IDENT and FOR-IDENT projects, hosted by LfU, HSWT and TUM. The database at https://www.lfu.bayern.de/stoffident/#!home has additional functionality. 	4428	0.15025527	2.02490488207018e-47	2.80316248350849e-173
+solutionsmlos	List containing the 6462 chemicals used for modelling in <a href='www.solutions-project.eu/' target='_blank'>the SOLUTIONS project</a>.	2012	0.135133565	4.25190803651868e-08	6.70768063648416e-175
+eucosmetics	EUCOSMETICS contains the Combined Inventory of Ingredients Employed in Cosmetic Products (2000, SCCNFP/0389/00 Final) and Revised Inventory (2006, Decision 2006/257/EC), prepared for NORMAN by P. von der Ohe (UBA) and R. Aalizadeh (Uni. Athens). 	1133	0.1120137	0.936151613113864	4.75895847723472e-175
+ecotox_v2	ECOTOXicology knowledgebase (ECOTOX) is a comprehensive, publicly available knowledgebase providing single chemical environmental toxicity data on aquatic life, terrestrial plants and wildlife.	4382	0.153385785	6.07330678600809e-57	3.06002446278826e-182
+pfasoecdna	List of PFAS released by the OECD, provided by Zhanyun Wang, curated and mapped to structures by Nikiforos Alygizakis	1325	0.13488294	0.00122367488683997	1.49795803788104e-186
+pfasoecd	OECD released a New Comprehensive Global Database of Per- and Polyfluoroalkyl Substances, (PFASs) listing more than 4700 new PFAS	1444	0.132808555	0.00386095475247961	8.79063737385901e-196
+efsaoft	The European Food Safety Authority has produced risk assessments for more than 4,000 substances in over 1,600 scientific opinions.	1453	0.109184936	0.999829389791207	5.06242949852443e-216
+pfasstructv1	List of all structures contained in DSSTox bounded by a set of structure filters used to identify PFAS (per- and polyfluorinated substances): March 2018 update	2249	0.14332561	2.2931063410667e-09	1.17699917741811e-220
+edspuoc	This list of EDSP-related chemicals on the EPA CompTox Dashboard is not a complete listing from the EDSP Universe of Chemicals.	2872	0.137365455	1.26488205598795e-11	2.56863218267721e-221
+bloodexposome	Chemicals identified as part of the blood exposome	11466	0.139173345	9.97155484435613e-24	4.31889366384916e-231
+fdafoodsubs	The Substances Added to Food inventory replaces what was previously known as Everything Added to Foods in the United States (EAFUS).	1011	0.09610646	1	1.17326414347016e-234
+foodcontactsdb	A database was created by the Food Packaging Forum Foundation (FPF) and is an overview of intentionally used food contact chemicals (FCC). 	2492	0.1227401	0.116783512824292	1.52496656229631e-236
+lserddb	LSERD is a free online platform, which enables the prediction of partition coefficients based on the linear solvation energy relationship approach.	3290	0.13149564	1.38555596803488e-08	1.87268579769924e-239
+pfasstructv2	List of all structures contained in DSSTox bounded by a substructure filter used to identify PFAS (per- and polyfluorinated substances): November 2019 update	3927	0.15083666	3.1472543372399e-26	1.44499344492456e-244
+solnslmctps	Predicted Transformation Products from the <a href='https://www.solutions-project.eu/' target='_blank'>SOLUTIONS</a> project.	1306	0.10026621	1	2.35336875044658e-245
+cpdat	Chemicals contained in the EPA's Chemical and Products Database	13452	0.14558099	2.89016132234999e-49	7.6728376193158e-248
+pfasstructv3	List of all structures contained in DSSTox bounded by multiple substructure filters used to identify PFAS (per- and polyfluorinated substances): August 2020 update	5153	0.15176149	1.44668646609202e-37	2.64386499488778e-249
+pfasstruct	PFAS Structure lists are versioned iteratively and this panel navigates between the various versions	5153	0.15176149	1.44668646609202e-37	2.64386499488778e-249
+pfasmaster	PFASMASTER is a consolidated list of PFAS substances spanning and bounded by the below lists of current interest to researchers and regulators worldwide.	5156	0.151657365	1.41058313850225e-37	2.08474050332441e-249
+canadadsl	The domestic substances list (DSL) is the sole standard against which a substance is judged to be new to Canada.	5354	0.13704502	2.19252560478043e-17	1.35649338744029e-254
+cosmosdb	COSMOS - Integrated in silico models for the prediction of human repeated-dose toxicity of COSMetics to Optimize Safety	2282	0.11073311	0.999983992493136	1.8316251447285e-259
+massbankref	This MassBank list contains chemicals associated with the full MassBank collection of reference standard spectra available on MassBank.EU, mapped to DTXSID by InChIKey. 	3879	0.11614311	0.774830798551677	9.8778093619068e-264
+cecscreen	HBM4EU CECscreen is a suspect screening list for Chemicals of Emerging Concern (CECs) plus metadata and predicted Phase 1 metabolites	33133	0.141447	7.66796849162873e-49	2.38786390747487e-269
+ghseyeskin	Chemical substances associated with skin sensitization, skin irritation, and eye irritation GHS (global harmonization system) data aggregated from international sources.	10312	0.137472805	1.11741363440374e-27	2.42453038970259e-271
+cerapp	CERAPP uses predictive computational models trained on HTS data to evaluate thousands of chemicals for ER-related activity.	13498	0.137528	2.01107903800703e-32	9.77096545635399e-273
+susdat	Merged NORMAN Suspect List “SusDat” from the NORMAN Suspect Exchange.	35082	0.14039211	6.99744983953801e-45	5.6185613117137e-275
+toxval_v5	The Toxicity Values database is delivered via the Hazard Tab in the CompTox Chemicals Dashboard.	22701	0.1435382	7.78373127533602e-49	6.56460470791693e-276
+kemimarket	The KEMI Market List contains chemicals expected to be on the market. Complied by Stellan Fischer, KEMI (Swedish Chemicals Agency) from various regulatory databases, including hazard and exposure scores to support the identification of unknowns. 	24233	0.13086382	2.06105586884617e-17	1.71891048935123e-302
+compara	COMPARA: A list related to the publication (in review), the 'Collaborative Modeling Project for Androgen Receptor Activity (CoMPARA)' which follows on from the Collaborative Estrogen Receptor Activity Prediction Project (CERAPP)	44866	0.13280413	6.60420464681475e-21	3.7417285398551e-305
+tsca_active_ncti_0320	TSCA Inventory non-confidential portion (updated March 20th 2020). The content of the list will change over time as both the non-confidential active TSCA inventory is updated and more substances are curated.	8882	0.1328638	2.60892666360774e-11	1.52254991980753e-307
+reach2017	This REACH list of 57760 REACH chemicals from the <a href='https://www.norman-network.com/?q=suspect-list-exchange' target='_blank'>NORMAN Suspect List Exchange</a>	31321	0.13463628	8.6791922208735e-23	0
+parisiii	List of solvents contained within the PARIS III database of  physical and chemical properties of solvents	2174	0.10952706	1	0
