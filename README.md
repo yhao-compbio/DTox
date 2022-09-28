@@ -1,5 +1,11 @@
 # DTox (Deep learning for Toxicology): an interpretation framework for knowledge-guided neural networks
 
+**Yun Hao, Joseph D. Romano, and Jason H. Moore**
+
+**University of Pennsylvania, Cedars-Sinai Medical Center**
+
+Paper: https://doi.org/10.1016/j.patter.2022.100565
+
 ### This repository contains the codes and datasets to reproduce the results of [DTox paper](https://doi.org/10.1016/j.patter.2022.100565). For a detailed tutorial on DTox implementation, please check [the DTox repository under EpistasisLab](https://github.com/EpistasisLab/DTox).
 
 ## Introduction 
